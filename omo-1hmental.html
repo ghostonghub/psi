@@ -1,0 +1,2072 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-07-06 Mon 18:35 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mental Health</title>
+<meta name="author" content="Staff Member(s), [[https://ourghostorg.github.io/][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Mental Health</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org6f5fdee">1. General</a></li>
+<li><a href="#org572208e">2. STEMM</a>
+<ul>
+<li><a href="#org307b6a9">2.1. CSE</a>
+<ul>
+<li><a href="#org629efef">2.1.1. Everyday Computing</a></li>
+</ul>
+</li>
+<li><a href="#org1aec31b">2.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org076ead3">3. Worldly Matters</a>
+<ul>
+<li><a href="#orgdefc35d">3.1. Nation States</a>
+<ul>
+<li><a href="#orgee209da">3.1.1. India</a></li>
+</ul>
+</li>
+<li><a href="#orge8c634b">3.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgbbd0622">4. Core</a>
+<ul>
+<li><a href="#org8d2da8c">4.1. European Society of Preventive Medicine</a></li>
+<li><a href="#org0439c4e">4.2. Mental Virtues</a>
+<ul>
+<li><a href="#org34f1cc7">4.2.1. Resilience</a></li>
+<li><a href="#org318a793">4.2.2. Mindfulness</a></li>
+<li><a href="#orgd790b6d">4.2.3. Authenticity</a></li>
+<li><a href="#org2d5eb52">4.2.4. Courage</a></li>
+</ul>
+</li>
+<li><a href="#org9beea64">4.3. Mental Disorders</a>
+<ul>
+<li><a href="#org3380541">4.3.1. General</a></li>
+<li><a href="#orge0ae694">4.3.2. STEMM</a></li>
+<li><a href="#orgde4a8e6">4.3.3. Worldly Matters</a></li>
+<li><a href="#org686d39d">4.3.4. Core</a></li>
+<li><a href="#org28aab02">4.3.5. Arts</a></li>
+<li><a href="#org84c00b8">4.3.6. Special Topics</a></li>
+<li><a href="#org9353be4">4.3.7. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org2bdf840">4.4. Psychiatry</a>
+<ul>
+<li><a href="#org1077e51">4.4.1. General</a></li>
+<li><a href="#orgc952c12">4.4.2. STEMM</a></li>
+<li><a href="#org28039a7">4.4.3. Worldly Matters</a></li>
+<li><a href="#org25fe708">4.4.4. Core</a></li>
+<li><a href="#orgc56ab6a">4.4.5. Special Topics</a></li>
+<li><a href="#org06a770d">4.4.6. Misc</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org0bcf45d">5. Arts</a>
+<ul>
+<li><a href="#org76270b5">5.1. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orge791d81">6. Special Topics</a>
+<ul>
+<li><a href="#orgc056f53">6.1. Crises</a></li>
+</ul>
+</li>
+<li><a href="#orgc82fd44">7. Misc</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-org6f5fdee" class="outline-2">
+<h2 id="org6f5fdee"><span class="section-number-2">1.</span> General</h2>
+</div>
+<div id="outline-container-org572208e" class="outline-2">
+<h2 id="org572208e"><span class="section-number-2">2.</span> STEMM</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org307b6a9" class="outline-3">
+<h3 id="org307b6a9"><span class="section-number-3">2.1.</span> CSE</h3>
+<div class="outline-text-3" id="text-2-1">
+</div>
+<div id="outline-container-org629efef" class="outline-4">
+<h4 id="org629efef"><span class="section-number-4">2.1.1.</span> Everyday Computing</h4>
+<div class="outline-text-4" id="text-2-1-1">
+</div>
+<ol class="org-ol">
+<li><a id="org0056c43"></a>Fair Tech<br />
+<div class="outline-text-5" id="text-2-1-1-1">
+<ul class="org-ul">
+<li>“Top Mental Health &amp; Prayer Apps Fail at Privacy, Security,” Mozilla Foundation, May 02, 2022. <a href="https://foundation.mozilla.org/en/blog/top-mental-health-and-prayer-apps-fail-spectacularly-at-privacy-security/">https://foundation.mozilla.org/en/blog/top-mental-health-and-prayer-apps-fail-spectacularly-at-privacy-security/</a> (accessed Jul. 04, 2023).</li>
+</ul>
+</div>
+</li>
+<li><a id="orgc081627"></a>Misc<br />
+<div class="outline-text-5" id="text-2-1-1-2">
+<ul class="org-ul">
+<li>“Pluralistic: Anyone who trusts an AI therapist needs their head examined (01 Apr 2025) – Pluralistic: Daily links from Cory Doctorow.” Accessed: Apr. 02, 2025. [Online]. Available: <a href="https://pluralistic.net/2025/04/01/doctor-robo-blabbermouth/">https://pluralistic.net/2025/04/01/doctor-robo-blabbermouth/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Mind Matters: Mental Privacy in the Era of Brain Tracking Technologies,” Center for Democracy and Technology. Accessed: Aug. 17, 2024. [Online]. Available: <a href="https://cdt.org/insights/mind-matters-mental-privacy-in-the-era-of-brain-tracking-technologies/">https://cdt.org/insights/mind-matters-mental-privacy-in-the-era-of-brain-tracking-technologies/</a></li>
+
+<li>“Mood Tracker Apps Spot Your Mood Swings With Passive Sensing - IEEE Spectrum.” Accessed: May 20, 2024. [Online]. Available: <a href="https://spectrum.ieee.org/mood-tracker">https://spectrum.ieee.org/mood-tracker</a></li>
+
+<li>“Useful Wellness and Mental Health Apps,” UCSF Department of Psychiatry and Behavioral Sciences, Sep. 24, 2021. <a href="https://psychiatry.ucsf.edu/copingresources/apps">https://psychiatry.ucsf.edu/copingresources/apps</a> (accessed Jul. 04, 2023).</li>
+
+<li>“One Mind PsyberGuide | The Mental Health App Guide Designed with You in Mind,” One Mind PsyberGuide. <a href="https://onemindpsyberguide.org/">https://onemindpsyberguide.org/</a> (accessed Jul. 04, 2023).</li>
+
+<li>“Privacy Policy Framework for Indian Mental Health Apps — The Centre for Internet and Society.” Accessed: Jan. 11, 2025. [Online]. Available: <a href="https://cis-india.org/internet-governance/blog/privacy-policy-framework-for-indian-metal-health-apps">https://cis-india.org/internet-governance/blog/privacy-policy-framework-for-indian-metal-health-apps</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org1aec31b" class="outline-3">
+<h3 id="org1aec31b"><span class="section-number-3">2.2.</span> Misc</h3>
+<div class="outline-text-3" id="text-2-2">
+<ul class="org-ul">
+<li>“Using NLP to Detect Mental Health Crises.” Accessed: Dec. 21, 2024. [Online]. Available: <a href="https://hai.stanford.edu/news/using-nlp-detect-mental-health-crises">https://hai.stanford.edu/news/using-nlp-detect-mental-health-crises</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org076ead3" class="outline-2">
+<h2 id="org076ead3"><span class="section-number-2">3.</span> Worldly Matters</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-orgdefc35d" class="outline-3">
+<h3 id="orgdefc35d"><span class="section-number-3">3.1.</span> Nation States</h3>
+<div class="outline-text-3" id="text-3-1">
+</div>
+<div id="outline-container-orgee209da" class="outline-4">
+<h4 id="orgee209da"><span class="section-number-4">3.1.1.</span> India</h4>
+<div class="outline-text-4" id="text-3-1-1">
+</div>
+<ol class="org-ol">
+<li><a id="org1350ef8"></a>Misc<br /></li>
+
+<li><a id="org120450c"></a>General<br /></li>
+<li><a id="orgfe45d97"></a>Worldly Matters<br />
+<ol class="org-ol">
+<li><a id="org362d89d"></a>Orgs<br />
+<div class="outline-text-6" id="text-3-1-1-3-1">
+<ul class="org-ul">
+<li>“Keshav Desiraju India Mental Health Observatory (IMHO),” Centre for Mental Health Law &amp; Policy. Accessed: Jun. 16, 2024. [Online]. Available: <a href="https://cmhlp.org/imho/home/">https://cmhlp.org/imho/home/</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org483601d"></a>Special Topics<br />
+<ol class="org-ol">
+<li><a id="orgeaf9267"></a>Texts<br />
+<div class="outline-text-6" id="text-3-1-1-4-1">
+<ul class="org-ul">
+<li>S. Kakar, <b>Shamans, Mystics, and Doctors: A Psychological Inquiry Into India and Its Healing Traditions.</b> Oxford, 2012.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgeab6079"></a>Articles, Essays<br />
+<ul class="org-ul">
+<li><a id="orgb20aeab"></a>Collections<br />
+<div class="outline-text-7" id="text-orgb20aeab">
+<ul class="org-ul">
+<li>T. FRONTLINE, “Frontline Explains: India’s mental health crisis,” Frontline. Accessed: Aug. 08, 2025. [Online]. Available: <a href="https://frontline.thehindu.com/packages/mental-health-india-stigma-therapy-drugs-grief/article69901402.ece">https://frontline.thehindu.com/packages/mental-health-india-stigma-therapy-drugs-grief/article69901402.ece</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgcca5f8c"></a>Misc<br />
+<div class="outline-text-7" id="text-orgcca5f8c">
+<ul class="org-ul">
+<li>Union Budget for Mental Health 2023-24: An Analysis. 2023. Accessed: Jun. 16, 2024. [Online]. Available: <a href="https://ruralindiaonline.org/en/library/resource/union-budget-for-mental-health-2023-24-an-analysis/">https://ruralindiaonline.org/en/library/resource/union-budget-for-mental-health-2023-24-an-analysis/</a></li>
+<li>“Transition to Adulthood and Mental Health: Challenges Faced by Indian Adolescents,” The India Forum. Accessed: Aug. 16, 2024. [Online]. Available: <a href="https://www.theindiaforum.in/health/transition-adulthood-and-mental-health-challenges-faced-indian-adolescents">https://www.theindiaforum.in/health/transition-adulthood-and-mental-health-challenges-faced-indian-adolescents</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orge8c634b" class="outline-3">
+<h3 id="orge8c634b"><span class="section-number-3">3.2.</span> Misc</h3>
+<div class="outline-text-3" id="text-3-2">
+<ul class="org-ul">
+<li>“Over a Billion People in the World Suffer from Mental Health Ailments: The Thirty-Ninth Newsletter (2025),” Tricontinental: Institute for Social Research. Accessed: Sep. 27, 2025. [Online]. Available: <a href="https://thetricontinental.org/newsletterissue/mental-health/">https://thetricontinental.org/newsletterissue/mental-health/</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgbbd0622" class="outline-2">
+<h2 id="orgbbd0622"><span class="section-number-2">4.</span> Core</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-org8d2da8c" class="outline-3">
+<h3 id="org8d2da8c"><span class="section-number-3">4.1.</span> European Society of Preventive Medicine</h3>
+<div class="outline-text-3" id="text-4-1">
+<ul class="org-ul">
+<li>M. Sagner, “Mental Health,” European Society of Preventive Medicine. Accessed: Jan. 30, 2024. [Online]. Available: <a href="https://espm.co/mental-health/">https://espm.co/mental-health/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org0439c4e" class="outline-3">
+<h3 id="org0439c4e"><span class="section-number-3">4.2.</span> Mental Virtues</h3>
+<div class="outline-text-3" id="text-4-2">
+</div>
+<div id="outline-container-org34f1cc7" class="outline-4">
+<h4 id="org34f1cc7"><span class="section-number-4">4.2.1.</span> Resilience</h4>
+<div class="outline-text-4" id="text-4-2-1">
+<ul class="org-ul">
+<li><i>“How to be resilient | Psyche Guides,”</i> Psyche. <a href="https://psyche.co/guides/resilience-is-like-a-muscle-build-it-up-when-life-pulls-down">https://psyche.co/guides/resilience-is-like-a-muscle-build-it-up-when-life-pulls-down</a> (accessed Nov. 29, 2020).</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org318a793" class="outline-4">
+<h4 id="org318a793"><span class="section-number-4">4.2.2.</span> Mindfulness</h4>
+<div class="outline-text-4" id="text-4-2-2">
+<ul class="org-ul">
+<li><i>“Mindful - healthy mind, healthy life,”</i> Mindful. <a href="https://www.mindful.org/">https://www.mindful.org/</a> (accessed Apr. 19, 2021).</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgd790b6d" class="outline-4">
+<h4 id="orgd790b6d"><span class="section-number-4">4.2.3.</span> Authenticity</h4>
+<div class="outline-text-4" id="text-4-2-3">
+<ul class="org-ul">
+<li>C. B. Guignon, <b>On Being Authentic.</b> Psychology Press, 2004.</li>
+<li>“A history of authenticity, from Jesus to self-help and beyond | Aeon Essays,” Aeon. <a href="https://aeon.co/essays/a-history-of-authenticity-from-jesus-to-self-help-and-beyond">https://aeon.co/essays/a-history-of-authenticity-from-jesus-to-self-help-and-beyond</a> (accessed Jul. 19, 2021).</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org2d5eb52" class="outline-4">
+<h4 id="org2d5eb52"><span class="section-number-4">4.2.4.</span> Courage</h4>
+<div class="outline-text-4" id="text-4-2-4">
+</div>
+<ol class="org-ol">
+<li><a id="orga57e266"></a>General<br /></li>
+<li><a id="orgd0fb01e"></a>Texts<br />
+<div class="outline-text-5" id="text-4-2-4-2">
+<ul class="org-ul">
+<li>G. Scarre, <b>On Courage.</b> Routledge, 2010.</li>
+</ul>
+</div>
+</li>
+<li><a id="org92275b9"></a>Misc<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org9beea64" class="outline-3">
+<h3 id="org9beea64"><span class="section-number-3">4.3.</span> Mental Disorders</h3>
+<div class="outline-text-3" id="text-4-3">
+</div>
+<div id="outline-container-org3380541" class="outline-4">
+<h4 id="org3380541"><span class="section-number-4">4.3.1.</span> General</h4>
+</div>
+<div id="outline-container-orge0ae694" class="outline-4">
+<h4 id="orge0ae694"><span class="section-number-4">4.3.2.</span> STEMM</h4>
+<div class="outline-text-4" id="text-4-3-2">
+</div>
+<ol class="org-ol">
+<li><a id="org9569815"></a>Systems Sciences, Misc<br />
+<ol class="org-ol">
+<li><a id="orgfe58869"></a>Misc<br /></li>
+</ol>
+</li>
+<li><a id="orge13ab94"></a>Computer Science and Engineering<br /></li>
+<li><a id="org1b187e7"></a>Misc<br /></li>
+</ol>
+</div>
+<div id="outline-container-orgde4a8e6" class="outline-4">
+<h4 id="orgde4a8e6"><span class="section-number-4">4.3.3.</span> Worldly Matters</h4>
+<div class="outline-text-4" id="text-4-3-3">
+</div>
+<ol class="org-ol">
+<li><a id="orgdffe5d2"></a>Special Groups<br />
+<ol class="org-ol">
+<li><a id="orgd2a9bca"></a>Biological Classes<br />
+<ul class="org-ul">
+<li><a id="orga0cccaa"></a>Animals<br /></li>
+<li><a id="org22c771f"></a>Gender<br />
+<ul class="org-ul">
+<li><a id="org58cba8c"></a>Women<br /></li>
+</ul>
+</li>
+<li><a id="org1cb294b"></a>Age<br />
+<ul class="org-ul">
+<li><a id="orgabce284"></a>Kids<br />
+<div class="outline-text-8" id="text-orgabce284">
+<ul class="org-ul">
+<li>D. Wolfe and E. Mash, ABNORMAL CHILD PSYCHOLOGY, 5TH EDN, 5th edition. Belmont, CA: Wadsworth Publishing Co Inc, 2012.</li>
+<li>R. Wicks-Nelson and A. C. I. Ph.D, Abnormal Child and Adolescent Psychology with DSM-V Updates: International Student Edition, 8th edition. Pearson, 2014.</li>
+<li>A. C. Israel, J. W. Malatras, and R. Wicks-Nelson, Abnormal Child And Adolescent Psychology, 9th edition. Taylor &amp; Francis Ltd, 2021.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgf858f8d"></a>Youth<br />
+<div class="outline-text-8" id="text-orgf858f8d">
+<ul class="org-ul">
+<li>R. Wicks-Nelson and A. C. I. Ph.D, Abnormal Child and Adolescent Psychology with DSM-V Updates: International Student Edition, 8th edition. Pearson, 2014.</li>
+<li>A. C. Israel, J. W. Malatras, and R. Wicks-Nelson, Abnormal Child And Adolescent Psychology, 9th edition. Taylor &amp; Francis Ltd, 2021.</li>
+</ul>
+</div>
+</li>
+<li><a id="org650d522"></a>Senior Citizens<br /></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="org05f3382"></a>SocioEconomic Classes<br />
+<ul class="org-ul">
+<li><a id="orgf5b445b"></a>Race, Caste<br /></li>
+<li><a id="orga124fa1"></a>Poor<br /></li>
+</ul>
+</li>
+</ol>
+</li>
+<li><a id="org9aef1ac"></a>Nation States<br />
+<ol class="org-ol">
+<li><a id="org545a27c"></a>India<br />
+<ul class="org-ul">
+<li><a id="org569c04e"></a>General<br /></li>
+<li><a id="org2d3bb6a"></a>STEMM<br />
+<ul class="org-ul">
+<li><a id="orgd3b91e0"></a>Systems Sciences, Misc<br />
+<ul class="org-ul">
+<li><a id="org3b2845e"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orge7c2543"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orgd47ae38"></a>Worldly Matters<br />
+<ul class="org-ul">
+<li><a id="orgccd727e"></a>Communication, Misc<br />
+<ul class="org-ul">
+<li><a id="orge68179b"></a>Hindi<br />
+<div class="outline-text-9" id="text-orge68179b">
+<ul class="org-ul">
+<li>A. K. Singh, Adhunik Asamanaya Manovigyan: Modern Abnormal Psychology.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgef27161"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orgbbb3baa"></a>Arts<br />
+<ul class="org-ul">
+<li><a id="org849eb7b"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org2337c87"></a>Special Topics<br />
+<ul class="org-ul">
+<li><a id="orgb84b4c9"></a>Texts<br />
+<div class="outline-text-8" id="text-orgb84b4c9">
+<ul class="org-ul">
+<li>B. Sébastia, <b>Restoring Mental Health in India: Pluralistic Therapies and Concepts.</b> OUP India, 2009.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org639edc8"></a>Misc<br /></li>
+</ul>
+</li>
+</ol>
+</li>
+<li><a id="org9023120"></a>Misc<br /></li>
+</ol>
+</div>
+<div id="outline-container-org686d39d" class="outline-4">
+<h4 id="org686d39d"><span class="section-number-4">4.3.4.</span> Core</h4>
+<div class="outline-text-4" id="text-4-3-4">
+</div>
+<ol class="org-ol">
+<li><a id="org0dfbbdc"></a>Introductory Texts<br />
+<div class="outline-text-5" id="text-4-3-4-1">
+<ul class="org-ul">
+<li>J. D. Raskin, ABNORMAL PSYCHOLOGY: Contrasting Perspectives, 1st ed. 2019 edition. London: Bloomsbury Academic, 2018.</li>
+<li>E. S. Conklin, Principles of Abnormal Psychology, 1928, 1st edition. Taylor &amp; Francis, 2017.</li>
+<li>R. J. Comer, Abnormal Psychology 11Ed, 11st ed. 2021 edition. New York: Worth Publishers Inc.,U.S., 2021.</li>
+<li>R. R. Laskar, Abnormal Psychology Journey into the realm of psychological disorders. Sankalp Publication, 2024.</li>
+<li>V. Durand, D. Barlow, and S. Hofmann, Abnormal Psychology: An Integrative Approach, 8th edition. Boston, MA: Wadsworth Publishing Co Inc, 2017.</li>
+<li>S. K. Whitbourne, ABNORMAL PSYCHOLOGY: CLINICAL PERSPECTIVES ON PSYCHOLOGICAL DISORDERS, 10th edition. McGraw-Hill Education, 2022.</li>
+<li>Oltmanns, Abnormal Psychology, 8e, Eighth edition. Pearson Education India, 2016.</li>
+<li>A. M. Kring and S. L. Johnson, Abnormal Psychology: The Science and Treatment of Psychological Disorders, DSM-5-TR Update, 15th edition. New Jersey: John Wiley &amp; Sons Inc, 2022.</li>
+<li>J. S. N. / spencer A. Rathus, Abnormal Psychology In A Changing World 10th edn, 10th e edition. Pearson Education India, 2018.</li>
+<li>J. Kring and N. Davison, Abnormal Psychology, 11ed, Eleventh edition. Wiley, 2011.</li>
+<li>J. N. BUTCHER, ABNORMAL PSYCHOLOGY GLOBAL EDITION. Boston Munich: PEARSON ACADEMIC, 2020.</li>
+<li>R. Sharma, Abnormal Psychology, Edition. Atlantic, 2022.</li>
+<li>G. S. Irwin and R. S. Barbara, ABNORMAL PSYCHOLOGY: THE PROBLEM OF MALADAPTIVE BEHAVIOR, 11TH EDN, Eleventh edition. Pearson Education, 2017.</li>
+<li>N. B. James, M. H. Jill, M. Susan, and B. D. Chandra, Abnormal Psychology, Sixteenth edition. Pearson Education, 2017.</li>
+<li>D. H. Barlow, V. M. Durand, and S. G. Hofmann, Abnormal Psychology: An Integrative Approach, Eighth edition. Cengage India Private Limited, 2018.</li>
+<li>S. K. WHITBOURNE, ABNORMAL PSYCHOLOGY, 9th edition. McGraw Hill, 2021.</li>
+<li>J. M. Hooley, J. N. Butcher, M. K. Nock, S. Mineka, and P. Kapur, Abnormal Psychology | By Pearson, Seventeen edition. Pearson Education, 2018.</li>
+<li>I. G. Sarason and B. R. Sarason, <i>Abnormal Psychology.</i> Prentice Hall PTR, 1998.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgb22a4c6"></a>Handbooks, Companions, Readers<br />
+<div class="outline-text-5" id="text-4-3-4-2">
+<ul class="org-ul">
+<li>A. Getzfeld and R. Friedes, Eds., Readings in Abnormal Psychology: Multiple Perspectives. Cognella, Inc, 2021.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgb068217"></a>Cognitive Health<br />
+<ol class="org-ol">
+<li><a id="orgbab0317"></a>Schizophrenia<br />
+<ul class="org-ul">
+<li><a id="orgaa36dd0"></a>General<br /></li>
+<li><a id="orgdbea8fb"></a>STEMM<br />
+<ul class="org-ul">
+<li><a id="orge91cce9"></a>Misc<br />
+<div class="outline-text-8" id="text-orge91cce9">
+<ul class="org-ul">
+<li>“Computational schizophrenia,” eLife. Accessed: Apr. 15, 2025. [Online]. Available: <a href="https://elifesciences.org/digests/79352/computational-schizophrenia">https://elifesciences.org/digests/79352/computational-schizophrenia</a></li>
+
+<li>J. Joseph, Schizophrenia and Genetics: The End of An Illusion, 1st edition. New York London: Taylor &amp; Francis Ltd, 2022.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>A. Musa, S. Khan, M. Mujahid, and M. El-Gaby, “The shallow cognitive map hypothesis: A hippocampal framework for thought disorder in schizophrenia,” Schizophr, vol. 8, no. 1, pp. 1–11, Apr. 2022, doi: 10.1038/s41537-022-00247-7.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org1276c33"></a>World<br />
+<ul class="org-ul">
+<li><a id="org4e44a49"></a>Nation States<br />
+<ul class="org-ul">
+<li><a id="org6b61c40"></a>India<br /></li>
+</ul>
+</li>
+<li><a id="org6e4dc21"></a>Misc<br />
+<div class="outline-text-8" id="text-org6e4dc21">
+<ul class="org-ul">
+<li>R. D. Laing, <b>The Politics of Experience and The Bird of Paradise.</b> Penguin UK, 1990.
+<ul class="org-ul">
+<li>A psychosocial perspective; no neuroscience, etc.</li>
+</ul></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgb99c45c"></a>Arts<br />
+<ul class="org-ul">
+<li><a id="org22fb5d5"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org6b1a584"></a>Misc<br />
+<div class="outline-text-7" id="text-org6b1a584">
+<ul class="org-ul">
+<li>“Science, serendipity and a new era for schizophrenia treatment | Psyche Ideas.” Accessed: Feb. 18, 2026. [Online]. Available: <a href="https://psyche.co/ideas/science-serendipity-and-a-new-era-for-schizophrenia-treatment">https://psyche.co/ideas/science-serendipity-and-a-new-era-for-schizophrenia-treatment</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org01d7efe"></a>ADHD<br />
+<ul class="org-ul">
+<li><a id="orgc2841ab"></a>Misc<br />
+<div class="outline-text-7" id="text-orgc2841ab">
+<ul class="org-ul">
+<li>“The hidden costs of masking for women with ADHD and autism | Aeon Essays,” Aeon. Accessed: Nov. 15, 2025. [Online]. Available: <a href="https://aeon.co/essays/the-hidden-costs-of-masking-for-women-with-adhd-and-autism">https://aeon.co/essays/the-hidden-costs-of-masking-for-women-with-adhd-and-autism</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orga0c8eae"></a>Articles, Essays<br />
+<div class="outline-text-7" id="text-orga0c8eae">
+<ul class="org-ul">
+<li>“In an era of split attention, there is more than one type of ADHD | Psyche Ideas.” Accessed: Sep. 20, 2025. [Online]. Available: <a href="https://psyche.co/ideas/in-an-era-of-split-attention-there-is-more-than-one-type-of-adhd">https://psyche.co/ideas/in-an-era-of-split-attention-there-is-more-than-one-type-of-adhd</a></li>
+
+<li>“Adult ADHD is becoming more inclusive, but not overdiagnosed | Aeon Essays,” Aeon. Accessed: Jul. 02, 2025. [Online]. Available: <a href="https://aeon.co/essays/adult-adhd-is-becoming-more-inclusive-but-not-overdiagnosed">https://aeon.co/essays/adult-adhd-is-becoming-more-inclusive-but-not-overdiagnosed</a></li>
+
+<li>“How to empower a teen with ADHD | Psyche Guides,” Psyche. Accessed: Jun. 15, 2024. [Online]. Available: <a href="https://psyche.co/guides/how-to-empower-a-teenager-who-has-adhd-so-they-can-thrive">https://psyche.co/guides/how-to-empower-a-teenager-who-has-adhd-so-they-can-thrive</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org9f25077"></a>Texts<br />
+<div class="outline-text-7" id="text-org9f25077">
+<ul class="org-ul">
+<li>E. M. Hallowell and J. J. Ratey, <i>Delivered From Distraction: Getting The Most Out Of Life With Attention Deficit Disorder.</i> Ballantine Books, 2005.</li>
+<li>E. M. Hallowell, <i>Driven To Distraction: Recognizing and Coping with Attention Deficit Disorder from Childhood Through Adulthood.</i> Simon and Schuster, 1994.</li>
+<li>K. Kelly and P. Ramundo, <i>You Mean I'm Not Lazy, Stupid or Crazy?!: The Classic Self-Help Book for Adults with Attention Deficit Disorder.</i> Simon and Schuster, 2006.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>D. G. Maté, Scattered Minds: The Origins and Healing of Attention Deficit Disorder. Vermilion, 2019.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgcfc6564"></a>Perfectionism<br />
+<div class="outline-text-6" id="text-4-3-4-3-3">
+<ul class="org-ul">
+<li><i>“How to get over ‘never good enough’ | Psyche Guides,”</i> Psyche. <a href="https://psyche.co/guides/how-to-get-over-never-good-enough-a-practical-guide">https://psyche.co/guides/how-to-get-over-never-good-enough-a-practical-guide</a> (accessed Nov. 26, 2020).</li>
+<li>K. Okakura, <b>The Book of Tea.</b> Library of Alexandria, 1935.</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org60e5866"></a>Emotional Health<br />
+<ol class="org-ol">
+<li><a id="org3addf34"></a>General<br /></li>
+<li><a id="org729430f"></a>Core<br />
+<ul class="org-ul">
+<li><a id="org4f60922"></a>Trauma<br />
+<ul class="org-ul">
+<li><a id="org28b56b7"></a>General<br /></li>
+<li><a id="org76c68d3"></a>STEMM<br />
+<ul class="org-ul">
+<li><a id="org3403062"></a>Systems Sciences, Misc<br />
+<ul class="org-ul">
+<li><a id="org13a65c6"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org0c22dde"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orgf504ff8"></a>Worldly Matters<br />
+<ul class="org-ul">
+<li><a id="org56f1488"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org61bfb35"></a>Arts<br />
+<ul class="org-ul">
+<li><a id="orga81826a"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org493f6ca"></a>Special Topics<br />
+<ul class="org-ul">
+<li><a id="orgcfc0693"></a>Articles, Essays<br />
+<div class="outline-text-9" id="text-orgcfc0693">
+<ul class="org-ul">
+<li>“Trauma unmakes the world of the self. Can stories repair it? | Psyche Ideas,” Psyche. <a href="https://psyche.co/ideas/trauma-unmakes-the-world-of-the-self-can-stories-repair-it">https://psyche.co/ideas/trauma-unmakes-the-world-of-the-self-can-stories-repair-it</a> (accessed Dec. 06, 2020).</li>
+<li>“Living without mental imagery may shield against trauma’s impact | Psyche Ideas,” Psyche. Accessed: Nov. 23, 2024. [Online]. Available: <a href="https://psyche.co/ideas/living-without-mental-imagery-may-shield-against-traumas-impact">https://psyche.co/ideas/living-without-mental-imagery-may-shield-against-traumas-impact</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orge2a12b4"></a>Misc<br />
+<div class="outline-text-8" id="text-orge2a12b4">
+<ul class="org-ul">
+<li>“Trauma Stewardship: An Everyday Guide to Caring for Self While Caring for Others,” The Trauma Stewardship Institute. Accessed: Feb. 07, 2026. [Online]. Available: <a href="https://traumastewardship.com/trauma-stewardship-book/">https://traumastewardship.com/trauma-stewardship-book/</a></li>
+
+<li>threefold consulting, Otto Scharmer on the four levels of listening, (Nov. 23, 2015). Accessed: Feb. 07, 2026. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=eLfXpRkVZaI">https://www.youtube.com/watch?v=eLfXpRkVZaI</a></li>
+</ul>
+
+
+
+
+<ul class="org-ul">
+<li>L. van D. Lipsky and C. Burk, Trauma Stewardship: An Everyday Guide to Caring for Self While Caring for Others. San Francisco, CA: Berrett-Koehler Publishers, 2009.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgb7b4680"></a>Suicide<br />
+<ul class="org-ul">
+<li><a id="orge0514cf"></a>General<br /></li>
+<li><a id="org308afb9"></a>STEMM<br />
+<ul class="org-ul">
+<li><a id="org872e53c"></a>Psychiatry<br />
+<div class="outline-text-9" id="text-org872e53c">
+<ul class="org-ul">
+<li>“Impact of social factors on suicide must be recognised, leading experts say.” Accessed: Sep. 11, 2024. [Online]. Available: <a href="https://www.psych.ox.ac.uk/news/impact-of-social-factors-on-suicide-must-be-recognised-leading-experts-say">https://www.psych.ox.ac.uk/news/impact-of-social-factors-on-suicide-must-be-recognised-leading-experts-say</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org40dbe91"></a>Technology<br />
+<div class="outline-text-9" id="text-org40dbe91">
+<ul class="org-ul">
+<li>“Controversial Assisted Suicide Pod Cleared for Use in Switzerland,” Gizmodo. <a href="https://gizmodo.com/controversial-assisted-suicide-pod-cleared-for-use-in-s-1848167349">https://gizmodo.com/controversial-assisted-suicide-pod-cleared-for-use-in-s-1848167349</a> (accessed Dec. 07, 2021).</li>
+</ul>
+</div>
+</li>
+<li><a id="orgea6b3db"></a>Data Science<br />
+<div class="outline-text-9" id="text-orgea6b3db">
+<ul class="org-ul">
+<li>S. Dattani, L. Rodés-Guirao, H. Ritchie, M. Roser, and E. Ortiz-Ospina, “Suicides,” Our World in Data, Apr. 2023, Accessed: Apr. 05, 2023. [Online]. Available: <a href="https://ourworldindata.org/suicide">https://ourworldindata.org/suicide</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org0c017c6"></a>Artificial Intelligence<br />
+<div class="outline-text-9" id="text-org0c017c6">
+<ul class="org-ul">
+<li>“Can AI Prevent Suicides? – Communications of the ACM.” Accessed: Jul. 02, 2026. [Online]. Available: <a href="https://cacm.acm.org/news/can-ai-prevent-suicides/">https://cacm.acm.org/news/can-ai-prevent-suicides/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgc82540e"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orgbc7e8d8"></a>Worldly Matters<br />
+<ul class="org-ul">
+<li><a id="org3a558a4"></a>Humanities, Misc<br />
+<ul class="org-ul">
+<li><a id="org1e949b5"></a>Psychology<br />
+<div class="outline-text-10" id="text-org1e949b5">
+<ul class="org-ul">
+<li><i>“Working on a suicide helpline changed how I talk to everyone | Psyche Ideas,”</i> Psyche. <a href="https://psyche.co/ideas/working-on-a-suicide-helpline-changed-how-i-talk-to-everyone">https://psyche.co/ideas/working-on-a-suicide-helpline-changed-how-i-talk-to-everyone</a> (accessed Nov. 27, 2020).</li>
+<li>“How to talk to a suicidal friend | Psyche Guides,” Psyche. <a href="https://psyche.co/guides/how-to-talk-about-suicide-and-save-the-life-of-a-loved-one">https://psyche.co/guides/how-to-talk-about-suicide-and-save-the-life-of-a-loved-one</a> (accessed Dec. 05, 2020).</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org69b4cda"></a>SocioPolitical Studies, Law, Misc<br />
+<ul class="org-ul">
+<li><a id="orga2c3ea6"></a>Nation States<br />
+<ul class="org-ul">
+<li><a id="org55933a5"></a>India<br />
+<ul class="org-ul">
+<li><a id="org7351734"></a>General<br /></li>
+<li><a id="org8c7e481"></a>STEMM<br />
+<ul class="org-ul">
+<li><a id="org7a16553"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orgf1de2f4"></a>Worldly Matters<br />
+<ul class="org-ul">
+<li><a id="orgdda4def"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orgd664226"></a>Arts<br />
+<ul class="org-ul">
+<li><a id="org15d6dbf"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org154b204"></a>Special Topics<br /></li>
+<li><a id="org453de13"></a>Misc<br />
+<div class="outline-text-12" id="text-org453de13">
+<ul class="org-ul">
+<li>A. Singh, “This book by a university clinic therapist explores causes of ‘suicidality’ among young Indians,” Scroll.in. Accessed: Jul. 02, 2025. [Online]. Available: <a href="https://scroll.in/article/1083781/this-book-by-a-university-clinic-therapist-explores-causes-of-suicidality-among-young-indians">https://scroll.in/article/1083781/this-book-by-a-university-clinic-therapist-explores-causes-of-suicidality-among-young-indians</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="orgcb6f1c7"></a>Relationships, Gender, Feminism, Misc<br />
+<div class="outline-text-10" id="text-orgcb6f1c7">
+<ul class="org-ul">
+<li>M. Jha, “When Suicide Threats Become A Tool Of Control In Intimate Relationships,” Feminism in India. Accessed: Oct. 03, 2025. [Online]. Available: <a href="https://feminisminindia.com/2025/10/03/when-suicide-threats-become-a-tool-of-control-in-intimate-relationships/">https://feminisminindia.com/2025/10/03/when-suicide-threats-become-a-tool-of-control-in-intimate-relationships/</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org3c7abaf"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org53c99ca"></a>Arts<br />
+<ul class="org-ul">
+<li><a id="orgb083e74"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org98eddb7"></a>Special Topics<br /></li>
+<li><a id="orgddf6a44"></a>Misc<br />
+<div class="outline-text-8" id="text-orgddf6a44">
+<ul class="org-ul">
+<li>S. M. Y. Arafat and S. K. Kar, Eds., Ecological and Social Determinants of Suicidal Behavior. Springer, 2025.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgabb84be"></a>Boredom<br />
+<ul class="org-ul">
+<li><a id="org839e3ad"></a>Misc<br /></li>
+<li><a id="org0ec885a"></a>Special Topics<br />
+<ul class="org-ul">
+<li><a id="org7151b00"></a>Texts<br />
+<div class="outline-text-9" id="text-org7151b00">
+<ul class="org-ul">
+<li>E. Hoffman and T. S. of Life, <b>How to Be Bored.</b> Pan Macmillan, 2016.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="orgcb9bcd9"></a>Loneliness<br />
+<ul class="org-ul">
+<li><a id="orged1978b"></a>General<br /></li>
+<li><a id="org5604670"></a>Philosophy<br />
+<div class="outline-text-8" id="text-org5604670">
+<ul class="org-ul">
+<li>K. Creasy, “Loneliness and Ressentiment,” Journal of the American Philosophical Association, pp. 1–19, May 2025, doi: 10.1017/apa.2025.9.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgc75d27a"></a>STEMM<br />
+<ul class="org-ul">
+<li><a id="org13e27d5"></a>CSE<br />
+<div class="outline-text-9" id="text-org13e27d5">
+<ul class="org-ul">
+<li>E. Ortiz-Ospina and M. Roser, “Loneliness and Social Connections,” Our World in Data, Feb. 2020, Accessed: Apr. 11, 2023. [Online]. Available: <a href="https://ourworldindata.org/social-connections-and-loneliness">https://ourworldindata.org/social-connections-and-loneliness</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org60ea5c8"></a>Misc<br />
+<div class="outline-text-9" id="text-org60ea5c8">
+<ul class="org-ul">
+<li>“Against Imaginary Friends: Why Digital Companions Are No Solution to Social Isolation – Communications of the ACM.” Accessed: Jan. 15, 2026. [Online]. Available: <a href="https://cacm.acm.org/research/against-imaginary-friends-why-digital-companions-are-no-solution-to-social-isolation/">https://cacm.acm.org/research/against-imaginary-friends-why-digital-companions-are-no-solution-to-social-isolation/</a></li>
+
+<li>V. Zhou, “My mom and Dr. DeepSeek,” Rest of World. Accessed: Sep. 03, 2025. [Online]. Available: <a href="https://restofworld.org/2025/ai-chatbot-china-sick/">https://restofworld.org/2025/ai-chatbot-china-sick/</a></li>
+
+<li>B. J. Sahakian, C. Langley, C. Shen, and J. Feng, “Loneliness and social isolation are linked to specific proteins – new research,” The Conversation. Accessed: Jan. 07, 2025. [Online]. Available: <a href="http://theconversation.com/loneliness-and-social-isolation-are-linked-to-specific-proteins-new-research-245416">http://theconversation.com/loneliness-and-social-isolation-are-linked-to-specific-proteins-new-research-245416</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orge89f8d8"></a>Worldly Matters<br />
+<ul class="org-ul">
+<li><a id="orgce08bbd"></a>Religions, Spirituality, Misc<br />
+<div class="outline-text-9" id="text-orgce08bbd">
+<ul class="org-ul">
+<li>“Embrace Your Loneliness - Namah Journal.” Accessed: Jan. 04, 2025. [Online]. Available: <a href="https://www.namahjournal.com/doc/Actual/Embrace-Your-Loneliness-vol-32-issue-1.html">https://www.namahjournal.com/doc/Actual/Embrace-Your-Loneliness-vol-32-issue-1.html</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgc01d956"></a>SocioPolitical Studies, Law, Misc<br />
+<ul class="org-ul">
+<li><a id="org27b14eb"></a>Special Groups<br />
+<ul class="org-ul">
+<li><a id="org15ac74d"></a>Senior Citizens<br />
+<div class="outline-text-11" id="text-org15ac74d">
+<ul class="org-ul">
+<li>R. Institute, “Loneliness, a year-round health issue for older adults, can be exacerbated during the holidays.” Accessed: Dec. 25, 2024. [Online]. Available: <a href="https://medicalxpress.com/news/2024-12-loneliness-year-health-issue-older.html">https://medicalxpress.com/news/2024-12-loneliness-year-health-issue-older.html</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org3271e4c"></a>Nation States<br />
+<ul class="org-ul">
+<li><a id="orge33b3a2"></a>India<br />
+<ul class="org-ul">
+<li><a id="orgfb0e581"></a>Traditional Approaches<br />
+<div class="outline-text-12" id="text-orgfb0e581">
+<ul class="org-ul">
+<li>A. Chatterjee, “This Bengali ritual is a cure for loneliness,” Down To Earth. Accessed: Jul. 13, 2024. [Online]. Available: <a href="https://www.downtoearth.org.in/health/this-bengali-ritual-is-a-cure-for-loneliness">https://www.downtoearth.org.in/health/this-bengali-ritual-is-a-cure-for-loneliness</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org13e1142"></a>Misc<br /></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="orgc4cd650"></a>Humanities, Misc<br />
+<ul class="org-ul">
+<li><a id="org90f35b9"></a>Psychology<br />
+<div class="outline-text-10" id="text-org90f35b9">
+<ul class="org-ul">
+<li>“Solitude can be profoundly restorative. Here’s how to savour it | Psyche Ideas,” Psyche. Accessed: Oct. 31, 2024. [Online]. Available: <a href="https://psyche.co/ideas/solitude-can-be-profoundly-restorative-heres-how-to-savour-it">https://psyche.co/ideas/solitude-can-be-profoundly-restorative-heres-how-to-savour-it</a></li>
+<li>E. Baek, R. Hyon, K. López, M. A. Porter, and C. Parkinson, <b>“Lonely individuals process the world in idiosyncratic ways.”</b> PsyArXiv, Jul. 03, 2021. doi: 10.31234/osf.io/yt872.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org29adeac"></a>Misc<br />
+<div class="outline-text-9" id="text-org29adeac">
+<ul class="org-ul">
+<li>“Isolationism isn’t new and is fuelled by deep human desires | Aeon Essays,” Aeon. Accessed: Jun. 17, 2025. [Online]. Available: <a href="https://aeon.co/essays/isolationism-isnt-new-and-is-fuelled-by-deep-human-desires">https://aeon.co/essays/isolationism-isnt-new-and-is-fuelled-by-deep-human-desires</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgf2cc697"></a>Arts<br />
+<ul class="org-ul">
+<li><a id="org7d2fba9"></a>Music<br />
+<ul class="org-ul">
+<li><a id="org72837fc"></a>Films<br />
+<div class="outline-text-10" id="text-org72837fc">
+<ul class="org-ul">
+<li>Shemaroo, Shagoon - Tum Apna Ranjo Gum-Apni Pareshani - Jagjit Kaur, (Mar. 05, 2009). Accessed: Jan. 25, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=A8Yr1OOeOT8">https://www.youtube.com/watch?v=A8Yr1OOeOT8</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org421437d"></a>Misc<br />
+<div class="outline-text-10" id="text-org421437d">
+<ul class="org-ul">
+<li>Meena Kumari - Topic, Chand Tanha, (Jul. 28, 2018). Accessed: Jan. 25, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=z_L8eFA5a6c">https://www.youtube.com/watch?v=z_L8eFA5a6c</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org7b2ff64"></a>Literature<br />
+<div class="outline-text-9" id="text-org7b2ff64">
+<ul class="org-ul">
+<li>“The Solitary Reaper,” Wikipedia. Dec. 14, 2024. Accessed: Jan. 25, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=The_Solitary_Reaper&amp;oldid=1263136043">https://en.wikipedia.org/w/index.php?title=The_Solitary_Reaper&amp;oldid=1263136043</a></li>
+<li>“The Solitary Reaper,” The Poetry Foundation. Accessed: Jan. 25, 2025. [Online]. Available: <a href="https://www.poetryfoundation.org/poems/45554/the-solitary-reaper">https://www.poetryfoundation.org/poems/45554/the-solitary-reaper</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgc0a7951"></a>Humor<br />
+<div class="outline-text-9" id="text-orgc0a7951">
+<ul class="org-ul">
+<li>Attractive Girls Union Refuses To Talk With Mike Greenman, (Nov. 18, 2008). Accessed: Apr. 09, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=n_UbFjUlWnI">https://www.youtube.com/watch?v=n_UbFjUlWnI</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org61b2a42"></a>Misc<br />
+<div class="outline-text-9" id="text-org61b2a42">
+<ul class="org-ul">
+<li>Paco, “Music Sparks Social Imagination and Eases Loneliness,” Organic Consumers. Accessed: Sep. 05, 2025. [Online]. Available: <a href="https://organicconsumers.org/music-sparks-social-imagination-and-eases-loneliness/">https://organicconsumers.org/music-sparks-social-imagination-and-eases-loneliness/</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org3220b06"></a>Special Topics<br />
+<ul class="org-ul">
+<li><a id="org8dbcd36"></a>Texts<br />
+<div class="outline-text-9" id="text-org8dbcd36">
+<ul class="org-ul">
+<li>S. Maitland and T. S. of Life, <b>How to Be Alone.</b> Pan Macmillan, 2014.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org82e1c96"></a>Misc<br />
+<div class="outline-text-8" id="text-org82e1c96">
+<ul class="org-ul">
+<li>“NYC blue: what the pain of loneliness tells us | Aeon Essays,” Aeon. Accessed: Aug. 30, 2025. [Online]. Available: <a href="https://aeon.co/essays/nyc-blue-what-the-pain-of-loneliness-tells-us">https://aeon.co/essays/nyc-blue-what-the-pain-of-loneliness-tells-us</a></li>
+
+<li>R. Krishnamurthy, “Loneliness global health crisis, 1 in 6 affected in last decade: WHO,” Down To Earth. Accessed: Jul. 04, 2025. [Online]. Available: <a href="https://www.downtoearth.org.in/health/loneliness-global-health-crisis-1-in-6-affected-in-last-decade-who">https://www.downtoearth.org.in/health/loneliness-global-health-crisis-1-in-6-affected-in-last-decade-who</a></li>
+
+<li>“Our crisis is not loneliness but human beings becoming invisible | Aeon Essays,” Aeon. Accessed: Jun. 20, 2025. [Online]. Available: <a href="https://aeon.co/essays/our-crisis-is-not-loneliness-but-human-beings-becoming-invisible">https://aeon.co/essays/our-crisis-is-not-loneliness-but-human-beings-becoming-invisible</a></li>
+
+<li>C. Victor and D. Yen, “Five ways to beat loneliness this winter,” The Conversation. Accessed: Dec. 25, 2024. [Online]. Available: <a href="http://theconversation.com/five-ways-to-beat-loneliness-this-winter-245630">http://theconversation.com/five-ways-to-beat-loneliness-this-winter-245630</a></li>
+
+<li>“Transcript: Are urban communities a remedy for loneliness?,” Greenpeace International. Accessed: Jan. 30, 2025. [Online]. Available: <a href="https://www.greenpeace.org/international/podcasts/72461/transcript-are-urban-communities-a-remedy-for-loneliness/">https://www.greenpeace.org/international/podcasts/72461/transcript-are-urban-communities-a-remedy-for-loneliness/</a></li>
+<li>“Have you felt lonely or hopeless? Try urban communities,” Greenpeace International. Accessed: Jan. 30, 2025. [Online]. Available: <a href="https://www.greenpeace.org/international/story/72431/have-you-felt-lonely-or-hopeless-try-urban-communities/">https://www.greenpeace.org/international/story/72431/have-you-felt-lonely-or-hopeless-try-urban-communities/</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgb33c07e"></a>Stress<br />
+<ul class="org-ul">
+<li><a id="orga4910ad"></a>General<br /></li>
+<li><a id="org3ce2507"></a>Handbooks, Companions<br />
+<div class="outline-text-8" id="text-org3ce2507">
+<ul class="org-ul">
+<li>K. L. Harkness and E. P. Hayden, <i>The Oxford Handbook of Stress and Mental Health.</i> Oxford University Press, 2020.</li>
+</ul>
+</div>
+</li>
+<li><a id="org7da3344"></a>Popular Resources<br />
+<div class="outline-text-8" id="text-org7da3344">
+<ul class="org-ul">
+<li>R. Chatterjee, The Stress Solution: The 4 Steps to Reset Your Body, Mind, Relationships and Purpose. Penguin Books, Limited, 2019.</li>
+<li>R. M. Sapolsky, <b>Why Zebras Don't Get Ulcers: The Acclaimed Guide to Stress, Stress-Related Diseases, and Coping - Now Revised and Updated</b>. Henry Holt and Company, 2004.</li>
+<li>H. B. M.D and M. Z. Klipper, <i>The Relaxation Response.</i> Harper Collins, 2009.
+<ul class="org-ul">
+<li>Essentially incorrect.</li>
+</ul></li>
+<li>P. Nuernberger, <i>Freedom from Stress: A Holistic Approach.</i> Himalayan Institute Press, 1981.</li>
+<li>D. G. Maté, When the Body Says No: The Cost of Hidden Stress. London: Vermilion, 2019.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgc000776"></a>Misc<br />
+<div class="outline-text-8" id="text-orgc000776">
+<ul class="org-ul">
+<li>C. Simon, “How to manage stress during an apocalypse,” Harvard Gazette. Accessed: May 09, 2025. [Online]. Available: <a href="https://news.harvard.edu/gazette/story/2025/04/how-to-manage-stress-during-an-apocalypse/">https://news.harvard.edu/gazette/story/2025/04/how-to-manage-stress-during-an-apocalypse/</a></li>
+
+<li>“The Golden Ratio for Cortisol Replacement | SIAM,” Society for Industrial and Applied Mathematics. Accessed: Mar. 22, 2025. [Online]. Available: <a href="https://www.siam.org/publications/siam-news/articles/the-golden-ratio-for-cortisol-replacement/">https://www.siam.org/publications/siam-news/articles/the-golden-ratio-for-cortisol-replacement/</a></li>
+<li>D. K. Walsh Neil, “Hydration may be your best defence against stress, new study shows,” Down To Earth. Accessed: Aug. 26, 2025. [Online]. Available: <a href="https://www.downtoearth.org.in/health/hydration-may-be-your-best-defence-against-stress-new-study-shows">https://www.downtoearth.org.in/health/hydration-may-be-your-best-defence-against-stress-new-study-shows</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgc988e3a"></a>Anxiety<br />
+<ul class="org-ul">
+<li><a id="org95180e1"></a>Misc<br />
+<div class="outline-text-8" id="text-org95180e1">
+<ul class="org-ul">
+<li>L. Gershon, “A History of Existential Anxiety,” JSTOR Daily. Accessed: Jan. 30, 2026. [Online]. Available: <a href="https://daily.jstor.org/a-history-of-existential-anxiety/">https://daily.jstor.org/a-history-of-existential-anxiety/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org4cb8245"></a>General<br /></li>
+
+<li><a id="orgfdc1a3b"></a>Special Topics<br />
+<ul class="org-ul">
+<li><a id="orge8234f3"></a>Popular Resources<br />
+<div class="outline-text-9" id="text-orge8234f3">
+<ul class="org-ul">
+<li>A. D. Botton, <b>Status Anxiety.</b> Penguin UK, 2005.</li>
+<li>D. Carnegie, <i>How To Stop Worrying &amp; Start Living.</i> Diamond Pocket Books Pvt Ltd, 2016.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgfd6b326"></a>Kids<br />
+<div class="outline-text-9" id="text-orgfd6b326">
+<ul class="org-ul">
+<li>J. Haidt, The Anxious Generation: How the Great Rewiring of Childhood Is Causing an Epidemic of Mental Illness. Penguin, 2025.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="orgb1c673c"></a>Depression<br />
+<ul class="org-ul">
+<li><a id="org20d822e"></a>General<br /></li>
+<li><a id="org2fdb366"></a>STEMM<br />
+<ul class="org-ul">
+<li><a id="orgd75862d"></a>Systems Sciences, Misc<br />
+<ul class="org-ul">
+<li><a id="org1c89d80"></a>Complexity Science<br /></li>
+<li><a id="orgcb0a7fc"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org8b1d9f7"></a>Biological Sciences, Misc<br />
+<ul class="org-ul">
+<li><a id="orgbbd7bfb"></a>Neuroscience<br />
+<div class="outline-text-10" id="text-orgbbd7bfb">
+<ul class="org-ul">
+<li>A. M. McIntosh and C. Lewis, “Depression: low serotonin may not be the cause – but antidepressants still work,” The Conversation. <a href="http://theconversation.com/depression-low-serotonin-may-not-be-the-cause-but-antidepressants-still-work-187477">http://theconversation.com/depression-low-serotonin-may-not-be-the-cause-but-antidepressants-still-work-187477</a> (accessed Jul. 23, 2022).</li>
+
+<li>S. Datta, “Depression: New Study Hammers a Nail into the Serotonin Model Coffin – The Wire Science.” <a href="https://science.thewire.in/the-sciences/serotonin-model-depression-repeal/">https://science.thewire.in/the-sciences/serotonin-model-depression-repeal/</a> (accessed Jul. 30, 2022).</li>
+</ul>
+</div>
+</li>
+<li><a id="org6e45ffa"></a>Ecology<br />
+<div class="outline-text-10" id="text-org6e45ffa">
+<ul class="org-ul">
+<li>C. C. Hsiao, A.-M. Yang, C. Wang, and C.-Y. Lin, “Association between glyphosate exposure and cognitive function, depression, and neurological diseases in a representative sample of US adults: NHANES 2013–2014 analysis,” Environmental Research, p. 116860, Aug. 2023, doi: 10.1016/j.envres.2023.116860.</li>
+</ul>
+</div>
+</li>
+<li><a id="org41b6f26"></a>Misc<br />
+<div class="outline-text-10" id="text-org41b6f26">
+<ul class="org-ul">
+<li>B. R. Mizrachi et al., “Major depressive disorder and bistability in an HPA-CNS toggle switch,” PLOS Computational Biology, vol. 19, no. 12, p. e1011645, Dec. 2023, doi: 10.1371/journal.pcbi.1011645.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org779b846"></a>Basic Sciences, Misc<br /></li>
+<li><a id="org905c5ae"></a>Mathematical, Computational Sciences, Misc<br /></li>
+<li><a id="org6937478"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org0f5e2c5"></a>Worldly Matters<br />
+<ul class="org-ul">
+<li><a id="org32f3995"></a>Space and Time<br /></li>
+<li><a id="orgfad563c"></a>Space, Earth, Life Sciences, Environment, Health, Misc<br /></li>
+<li><a id="org3629775"></a>Religions, Spirituality, Misc<br />
+<div class="outline-text-9" id="text-org3629775">
+<ul class="org-ul">
+<li>D. Lama, <i>The Art of Happiness, 10th Anniversary Edition: A Handbook for Living.</i> Penguin, 2009.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgb848171"></a>Humanities, Misc<br /></li>
+<li><a id="org9292dab"></a>SocioPolitical Studies, Law, Misc<br />
+<ul class="org-ul">
+<li><a id="org5aece84"></a>Nation States<br />
+<ul class="org-ul">
+<li><a id="org8079ca8"></a>India<br />
+<ul class="org-ul">
+<li><a id="orgb200102"></a>General<br /></li>
+<li><a id="org3e3b46f"></a>STEMM<br />
+<ul class="org-ul">
+<li><a id="org71788e1"></a>Systems Sciences, Misc<br />
+<ul class="org-ul">
+<li><a id="orge5a887c"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orgbe845de"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org9db8e4e"></a>Worldly Matters<br />
+<ul class="org-ul">
+<li><a id="org3db0ab1"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org8ebf95a"></a>Arts<br />
+<ul class="org-ul">
+<li><a id="org4d5c073"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org479b1f6"></a>Special Topics<br /></li>
+<li><a id="org715c4bd"></a>Misc<br /></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="org4dc976a"></a>Business Studies, Misc<br /></li>
+<li><a id="org134edc8"></a>Security Studies, Misc<br /></li>
+<li><a id="org37ba5c4"></a>Communication, Misc<br /></li>
+<li><a id="org1c55c58"></a>Misc<br />
+<div class="outline-text-9" id="text-org1c55c58">
+<ul class="org-ul">
+<li>“Social Connections Mitigate Genetic Risk for Depression | Psychology Today.” Accessed: May 11, 2025. [Online]. Available: <a href="https://www.psychologytoday.com/us/blog/dating-and-mating/202309/social-connections-mitigate-genetic-risk-for-depression">https://www.psychologytoday.com/us/blog/dating-and-mating/202309/social-connections-mitigate-genetic-risk-for-depression</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgb8a66fa"></a>Core<br />
+<ul class="org-ul">
+<li><a id="org67b5375"></a>Solutions<br />
+<ul class="org-ul">
+<li><a id="orgfefc267"></a>Diets<br />
+<div class="outline-text-10" id="text-orgfefc267">
+<ul class="org-ul">
+<li>OCA, “8 Happiness-Boosting Foods You Should Be Eating In 2025,” Organic Consumers. Accessed: Feb. 03, 2025. [Online]. Available: <a href="https://organicconsumers.org/8-happiness-boosting-foods-you-should-be-eating-in-2025/">https://organicconsumers.org/8-happiness-boosting-foods-you-should-be-eating-in-2025/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org8ba8aaf"></a>Workouts<br />
+<div class="outline-text-10" id="text-org8ba8aaf">
+<ul class="org-ul">
+<li>R. K. Dishman, C. P. McDowell, and M. P. Herring, “Customary physical activity and odds of depression: a systematic review and meta-analysis of 111 prospective cohort studies,” Br J Sports Med, vol. 55, no. 16, pp. 926–934, Aug. 2021, doi: 10.1136/bjsports-2020-103140.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgb122394"></a>Medicine<br />
+<div class="outline-text-10" id="text-orgb122394">
+<ul class="org-ul">
+<li>“How to decide whether to take antidepressants | Psyche Guides,” Psyche. <a href="https://psyche.co/guides/how-to-decide-whether-to-start-taking-antidepressant-pills">https://psyche.co/guides/how-to-decide-whether-to-start-taking-antidepressant-pills</a> (accessed Aug. 31, 2023).</li>
+<li>“A personalised alternative to antidepressants is on the way | Psyche Ideas,” Psyche. <a href="https://psyche.co/ideas/a-personalised-alternative-to-antidepressants-is-on-the-way">https://psyche.co/ideas/a-personalised-alternative-to-antidepressants-is-on-the-way</a> (accessed Nov. 24, 2022).</li>
+</ul>
+</div>
+</li>
+<li><a id="orgf7c3811"></a>ECT<br /></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="org0754aea"></a>Arts<br />
+<ul class="org-ul">
+<li><a id="orgbf22eac"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orgfa82bfd"></a>Special Topics<br />
+<ul class="org-ul">
+<li><a id="orgdc94240"></a>Classics<br />
+<div class="outline-text-9" id="text-orgdc94240">
+<ul class="org-ul">
+<li>B. Russell, <i>The Conquest of Happiness.</i> Routledge, 2015.</li>
+</ul>
+</div>
+</li>
+<li><a id="org6ee29b0"></a>Texts<br />
+<div class="outline-text-9" id="text-org6ee29b0">
+<ul class="org-ul">
+<li>P. Dolan, <b>Happiness by Design: Finding Pleasure and Purpose in Everyday Life.</b> Penguin UK, 2014.</li>
+
+<li>M. Wiking, <b>The Little Book of Hygge: Danish Secrets to Happy Living.</b> HarperCollins, 2017.</li>
+<li>M. Wiking, <b>The Little Book of Lykke: The Danish Search for the World's Happiest People.</b> Penguin UK, 2017.</li>
+<li>M. Wiking, <b>The Art of Making Memories: How to Create and Remember Happy Moments.</b> 2019.</li>
+
+<li>D. D. B. M.D, <b>Feeling Good: The New Mood Therapy.</b> Harper Collins, 2012.</li>
+<li>D. Gilbert, <i>Stumbling on Happiness.</i> HarperCollins UK, 2009.</li>
+<li>D. Nettle, <i>Happiness: The Science Behind Your Smile.</i> OUP Oxford, 2005.</li>
+<li>M. E. P. Seligman, <i>Learned Optimism: How to Change Your Mind and Your Life.</i> Knopf Doubleday Publishing Group, 2011.</li>
+</ul>
+</div>
+</li>
+<li><a id="org2411664"></a>Articles, Essays<br />
+<ul class="org-ul">
+<li><a id="org6a040c7"></a>Psyche Magazine<br />
+<div class="outline-text-10" id="text-org6a040c7">
+<ul class="org-ul">
+<li>“The loss remains, so why does intense grief usually fade? | Psyche Ideas,” Psyche. Accessed: Feb. 11, 2025. [Online]. Available: <a href="https://psyche.co/ideas/the-loss-remains-so-why-does-intense-grief-usually-fade">https://psyche.co/ideas/the-loss-remains-so-why-does-intense-grief-usually-fade</a></li>
+<li>“What’s going on in depression to make negative beliefs so sticky? | Psyche Ideas,” Psyche. Accessed: Sep. 29, 2023. [Online]. Available: <a href="https://psyche.co/ideas/whats-going-on-in-depression-to-make-negative-beliefs-so-sticky">https://psyche.co/ideas/whats-going-on-in-depression-to-make-negative-beliefs-so-sticky</a></li>
+<li>“Why life is faster but depression is lower in bigger cities | Psyche Ideas,” Psyche. Accessed: Dec. 08, 2023. [Online]. Available: <a href="https://psyche.co/ideas/why-life-is-faster-but-depression-is-lower-in-bigger-cities">https://psyche.co/ideas/why-life-is-faster-but-depression-is-lower-in-bigger-cities</a></li>
+<li>“How to laugh more | Psyche Guides,” Psyche. <a href="https://psyche.co/guides/how-to-get-a-health-and-wellbeing-boost-from-laughing">https://psyche.co/guides/how-to-get-a-health-and-wellbeing-boost-from-laughing</a> (accessed Mar. 28, 2021).</li>
+<li>“How sitting ‘in the hole’ helped me cope with depression | Psyche Stories of Change.” Accessed: Jul. 19, 2025. [Online]. Available: <a href="https://psyche.co/stories-of-change/how-sitting-in-the-hole-helped-me-cope-with-depression">https://psyche.co/stories-of-change/how-sitting-in-the-hole-helped-me-cope-with-depression</a></li>
+<li>“The hidden calculations that determine whether you will cry | Psyche Ideas.” Accessed: Jun. 27, 2025. [Online]. Available: <a href="https://psyche.co/ideas/the-hidden-calculations-that-determine-whether-you-will-cry">https://psyche.co/ideas/the-hidden-calculations-that-determine-whether-you-will-cry</a></li>
+<li>“How to support someone with depression | Psyche Guides,” Psyche. Accessed: Jan. 09, 2025. [Online]. Available: <a href="https://psyche.co/guides/how-to-support-someone-with-depression-so-they-dont-feel-alone">https://psyche.co/guides/how-to-support-someone-with-depression-so-they-dont-feel-alone</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgf38fa4b"></a>Aeon Magazine<br />
+<div class="outline-text-10" id="text-orgf38fa4b">
+<ul class="org-ul">
+<li>“For Schopenhauer, happiness is a state of semi-satisfaction | Aeon Essays,” Aeon. Accessed: Aug. 31, 2025. [Online]. Available: <a href="https://aeon.co/essays/for-schopenhauer-happiness-is-a-state-of-semi-satisfaction">https://aeon.co/essays/for-schopenhauer-happiness-is-a-state-of-semi-satisfaction</a></li>
+<li>“What the science of happiness says about the self and others | Aeon Essays,” Aeon. Accessed: May 14, 2024. [Online]. Available: <a href="https://aeon.co/essays/what-the-science-of-happiness-says-about-the-self-and-others">https://aeon.co/essays/what-the-science-of-happiness-says-about-the-self-and-others</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgfe509e4"></a>Misc<br />
+<div class="outline-text-10" id="text-orgfe509e4">
+<ul class="org-ul">
+<li>G. Tsakraklides, “The Happiness Trap: How Humans Became Terrified of Scarcity,” The George Tsakraklides View. Accessed: May 30, 2025. [Online]. Available: <a href="https://georgetsakraklides.substack.com/p/the-happiness-trap-how-humans-became">https://georgetsakraklides.substack.com/p/the-happiness-trap-how-humans-became</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="org7b97c7c"></a>Misc<br />
+<ul class="org-ul">
+<li><a id="org70d26c9"></a>Misc<br />
+<div class="outline-text-9" id="text-org70d26c9">
+<ul class="org-ul">
+<li>T. H. Bureau, “World Happiness Report 2026: Finland happiest country for ninth time, India ranks 116th,” The Hindu, Mar. 19, 2026. Accessed: Mar. 19, 2026. [Online]. Available: <a href="https://www.thehindu.com/news/international/world-happiness-report-2026-finland-india-costa-rica-rankings/article70760747.ece">https://www.thehindu.com/news/international/world-happiness-report-2026-finland-india-costa-rica-rankings/article70760747.ece</a></li>
+<li>“Executive summary: happiness and social media.” Accessed: Mar. 19, 2026. [Online]. Available: <a href="https://worldhappiness.report/ed/2026/executive-summary-happiness-and-social-media/">https://worldhappiness.report/ed/2026/executive-summary-happiness-and-social-media/</a></li>
+<li>“Home.” Accessed: Mar. 19, 2026. [Online]. Available: <a href="https://worldhappiness.report/">https://worldhappiness.report/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>T. Johnson, “Books,” Radical Joy for Hard Times. Accessed: Mar. 18, 2026. [Online]. Available: <a href="https://radicaljoy.org/books/">https://radicaljoy.org/books/</a></li>
+<li>T. Johnson, “Radical Joy for Hard Times is for Finding and Making Beauty in Wounded Places,” Radical Joy for Hard Times. Accessed: Mar. 18, 2026. [Online]. Available: <a href="https://radicaljoy.org/">https://radicaljoy.org/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>C. Brincat, “Does St. John’s wort really increase serotonin?,” Popular Science. Accessed: Aug. 28, 2025. [Online]. Available: <a href="https://www.popsci.com/health/does-st-john-wort-increase-serotonin-depression/">https://www.popsci.com/health/does-st-john-wort-increase-serotonin-depression/</a></li>
+
+<li>T. M. P. Reader, “Across Cultures, One Key to Happiness Stands Out,” The MIT Press Reader. Accessed: Aug. 01, 2025. [Online]. Available: <a href="https://thereader.mitpress.mit.edu/across-cultures-one-key-to-happiness-stands-out/">https://thereader.mitpress.mit.edu/across-cultures-one-key-to-happiness-stands-out/</a></li>
+<li>T. M. P. Reader, “Why Are Men More Vulnerable to Depression in Fatherhood?,” The MIT Press Reader. Accessed: Dec. 20, 2024. [Online]. Available: <a href="https://thereader.mitpress.mit.edu/why-are-men-more-vulnerable-to-depression-in-fatherhood/">https://thereader.mitpress.mit.edu/why-are-men-more-vulnerable-to-depression-in-fatherhood/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>S. Strogatz, “What Happens in the Brain to Cause Depression?,” Quanta Magazine. Accessed: May 24, 2024. [Online]. Available: <a href="https://www.quantamagazine.org/what-happens-in-the-brain-to-cause-depression-20240523/">https://www.quantamagazine.org/what-happens-in-the-brain-to-cause-depression-20240523/</a></li>
+<li>U.-U. A. de Barcelona, “It’s true, happiness doesn’t cost much,” UAB Barcelona. Accessed: May 14, 2024. [Online]. Available: <a href="https://www.uab.cat/web/sala-de-premsa-icta-uab/detall-noticia/it-s-true-happiness-doesn-t-cost-much-1345819915004.html?detid=1345908468875">https://www.uab.cat/web/sala-de-premsa-icta-uab/detall-noticia/it-s-true-happiness-doesn-t-cost-much-1345819915004.html?detid=1345908468875</a></li>
+
+<li>RNZ. <b>“Why Do We Trust Smiles When They’re so Easy to Fake?,”</b> March 14, 2021. <a href="https://www.rnz.co.nz/national/programmes/sunday/audio/2018787430/why-do-we-trust-smiles-when-they-re-so-easy-to-fake">https://www.rnz.co.nz/national/programmes/sunday/audio/2018787430/why-do-we-trust-smiles-when-they-re-so-easy-to-fake</a>.</li>
+
+<li>J. Keegan and J. Eastwood, “From ‘Heavy Purchasers’ of Pregnancy Tests to the Depression-Prone: We Found 650,000 Ways Advertisers Label You – The Markup,” Jun. 08, 2023. <a href="https://themarkup.org/privacy/2023/06/08/from-heavy-purchasers-of-pregnancy-tests-to-the-depression-prone-we-found-650000-ways-advertisers-label-you">https://themarkup.org/privacy/2023/06/08/from-heavy-purchasers-of-pregnancy-tests-to-the-depression-prone-we-found-650000-ways-advertisers-label-you</a> (accessed Jun. 09, 2023).</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="org1d04ceb"></a>Anger<br />
+<ul class="org-ul">
+<li><a id="org2069ff3"></a>General<br /></li>
+<li><a id="org24cf7cc"></a>STEMM<br />
+<ul class="org-ul">
+<li><a id="org539f6a3"></a>Systems Sciences, Misc<br />
+<ul class="org-ul">
+<li><a id="org8d3e4c7"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orgada24d9"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orgf939269"></a>Worldly Matters<br />
+<ul class="org-ul">
+<li><a id="orga2b6f41"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org663eada"></a>Core<br /></li>
+<li><a id="org40b23b3"></a>Arts<br />
+<ul class="org-ul">
+<li><a id="orgb2a450a"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org92be774"></a>Special Topics<br />
+<ul class="org-ul">
+<li><a id="orgb79affc"></a>Texts<br />
+<div class="outline-text-9" id="text-orgb79affc">
+<ul class="org-ul">
+<li>S. Y. Bhave and S. Saini, <i>Anger Management.</i> SAGE Publications India, 2009.</li>
+<li>R. Rini, <i>The Ethics of Microaggression.</i> Routledge, 2020.</li>
+
+<li>D. Goleman, <i>Destructive Emotions.</i> Bloomsbury Publishing, 2014.</li>
+</ul>
+</div>
+</li>
+<li><a id="org5af8faf"></a>Articles, Essays<br />
+<div class="outline-text-9" id="text-org5af8faf">
+<ul class="org-ul">
+<li>Paco, “Venting Doesn’t Reduce Anger, But Something Else Does, Says Study,” Organic Consumers. Accessed: Aug. 07, 2025. [Online]. Available: <a href="https://organicconsumers.org/venting-doesnt-reduce-anger-but-something-else-does-says-study/">https://organicconsumers.org/venting-doesnt-reduce-anger-but-something-else-does-says-study/</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org3211372"></a>Misc<br />
+<div class="outline-text-8" id="text-org3211372">
+<ul class="org-ul">
+<li>“Anger is a valuable emotion driving private and public good | Aeon Essays.” Accessed: Jan. 31, 2026. [Online]. Available: <a href="https://aeon.co/essays/anger-is-a-valuable-emotion-driving-private-and-public-good">https://aeon.co/essays/anger-is-a-valuable-emotion-driving-private-and-public-good</a></li>
+
+<li>“How to tolerate annoying things | Psyche Guides.” Accessed: Nov. 04, 2025. [Online]. Available: <a href="https://psyche.co/guides/how-to-respond-to-annoying-things-with-greater-ease">https://psyche.co/guides/how-to-respond-to-annoying-things-with-greater-ease</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="org45673eb"></a>Popular Resources<br />
+<div class="outline-text-6" id="text-4-3-4-4-3">
+<ul class="org-ul">
+<li>L. Fosslien and M. W. Duffy, <i>No Hard Feelings: Emotions at Work and How They Help Us Succeed.</i> Penguin UK, 2019.</li>
+<li>O. James and T. S. of Life, <i>How to Develop Emotional Health.</i> Pan Macmillan, 2014.</li>
+<li>D. Goleman, <i>Destructive Emotions.</i> Bloomsbury Publishing, 2014.</li>
+<li>R. C. Solomon, <i>True to Our Feelings: What Our Emotions Are Really Telling Us.</i> Oxford University Press, 2008.</li>
+<li>P. Ekman, <i>Emotions Revealed: Recognizing Faces and Feelings to Improve Communication and Emotional Life.</i> Henry Holt and Company, 2004.</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="orgaa6f704"></a>Special Topics<br />
+<ol class="org-ol">
+<li><a id="orgd05ac79"></a>NeuroScience<br />
+<div class="outline-text-6" id="text-4-3-4-5-1">
+<ul class="org-ul">
+<li>W. J and Ray, Abnormal Psychology: Neuroscience Perspectives on Human Behavior and Experience, First Edition. SAGE Texts, 2015.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgd7c321c"></a>Addiction<br />
+<ul class="org-ul">
+<li><a id="org8d74002"></a>General<br /></li>
+<li><a id="org2ac5563"></a>Special Topics<br />
+<ul class="org-ul">
+<li><a id="org7f29b19"></a>Drug Addiction in Punjab<br />
+<ul class="org-ul">
+<li><a id="orgeb9ad99"></a>Misc<br /></li>
+<li><a id="org3d28c37"></a>Articles, Essays<br />
+<div class="outline-text-9" id="text-org3d28c37">
+<ul class="org-ul">
+<li>“Why Punjab’s war on drugs is failing,” The Times of India, Apr. 13, 2019. Accessed: Dec. 11, 2022. [Online]. Available: <a href="https://timesofindia.indiatimes.com/elections/lok-sabha-elections-2019/punjab/news/why-punjabs-war-on-drugs-is-failing/articleshow/68865411.cms">https://timesofindia.indiatimes.com/elections/lok-sabha-elections-2019/punjab/news/why-punjabs-war-on-drugs-is-failing/articleshow/68865411.cms</a></li>
+<li>“Punjab: The invisible drug addicts,” The Indian Express, Jul. 04, 2019. <a href="https://indianexpress.com/article/india/punjab-the-invisible-drug-addicts-5813991/">https://indianexpress.com/article/india/punjab-the-invisible-drug-addicts-5813991/</a> (accessed Dec. 11, 2022).</li>
+
+<li>“Why has India’s Punjab fallen into the grip of drug abuse?,” BBC News, Feb. 02, 2017. Accessed: Dec. 11, 2022. [Online]. Available: <a href="https://www.bbc.com/news/world-asia-india-38824478">https://www.bbc.com/news/world-asia-india-38824478</a></li>
+<li>“Punjab’s drug menace: ‘I wanted my son to die,’” BBC News, Nov. 23, 2018. Accessed: Dec. 11, 2022. [Online]. Available: <a href="https://www.bbc.com/news/world-asia-india-46218646">https://www.bbc.com/news/world-asia-india-46218646</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orge72af31"></a>Films<br />
+<div class="outline-text-9" id="text-orge72af31">
+<ul class="org-ul">
+<li>“Watch CAT | Netflix Official Site.” <a href="https://www.netflix.com/in/title/81281063">https://www.netflix.com/in/title/81281063</a> (accessed Dec. 11, 2022).</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="org6d82c0a"></a>Misc<br />
+<div class="outline-text-7" id="text-org6d82c0a">
+<ul class="org-ul">
+<li>D. G. Maté, In the Realm of Hungry Ghosts: Close Encounters with Addiction. London: Vermilion, 2018.</li>
+
+<li>“Does it still make sense to call addiction a ‘brain disease’? | Psyche Ideas.” Accessed: Sep. 23, 2025. [Online]. Available: <a href="https://psyche.co/ideas/does-it-still-make-sense-to-call-addiction-a-brain-disease">https://psyche.co/ideas/does-it-still-make-sense-to-call-addiction-a-brain-disease</a></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>E. Dolgin, “Will blockbuster obesity drugs revolutionize addiction treatment?,” Nature, vol. 648, no. 8092, pp. 20–22, Dec. 2025, doi: 10.1038/d41586-025-03911-x.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgcb089fb"></a>Obsessive Compulsive Disorder<br />
+<ul class="org-ul">
+<li><a id="org5f58670"></a>General<br />
+<div class="outline-text-7" id="text-org5f58670">
+<ul class="org-ul">
+<li>“Obsessive–compulsive disorder - Wikipedia.” Accessed: Oct. 25, 2025. [Online]. Available: <a href="https://en.wikipedia.org/wiki/Obsessive%E2%80%93compulsive_disorder">https://en.wikipedia.org/wiki/Obsessive%E2%80%93compulsive_disorder</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgeb810e5"></a>STEMM<br />
+<ul class="org-ul">
+<li><a id="orgc5a9ce8"></a>Systems Sciences, Misc<br />
+<ul class="org-ul">
+<li><a id="orgd2a14e0"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org6a94a23"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org91d0a51"></a>Worldly Matters<br />
+<ul class="org-ul">
+<li><a id="org64bdb66"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orgf95a80f"></a>Arts<br />
+<ul class="org-ul">
+<li><a id="org7b2235c"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org787a51e"></a>Special Topics<br /></li>
+<li><a id="org53b226f"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org208341d"></a>Bipolar Disorder<br />
+<ul class="org-ul">
+<li><a id="org2dcaa5e"></a>General<br />
+<div class="outline-text-7" id="text-org2dcaa5e">
+<ul class="org-ul">
+<li>“Bipolar disorder,” Wikipedia. Oct. 22, 2025. Accessed: Oct. 25, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Bipolar_disorder&amp;oldid=1318135378">https://en.wikipedia.org/w/index.php?title=Bipolar_disorder&amp;oldid=1318135378</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org254fcb0"></a>STEMM<br />
+<ul class="org-ul">
+<li><a id="orgff08492"></a>Systems Sciences, Misc<br />
+<ul class="org-ul">
+<li><a id="orge8d7eec"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orgab8bd44"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org0cc4036"></a>Worldly Matters<br />
+<ul class="org-ul">
+<li><a id="orgf3b8ba0"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orgdefd8d6"></a>Arts<br />
+<ul class="org-ul">
+<li><a id="orgd92f9fb"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orgd6258c2"></a>Special Topics<br /></li>
+<li><a id="org1398202"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orge83a6da"></a>PTSD<br />
+<ul class="org-ul">
+<li><a id="orgf0ce643"></a>General<br />
+<div class="outline-text-7" id="text-orgf0ce643">
+<ul class="org-ul">
+<li>“Post-traumatic stress disorder - Wikipedia.” Accessed: Oct. 25, 2025. [Online]. Available: <a href="https://en.wikipedia.org/wiki/Post-traumatic_stress_disorder">https://en.wikipedia.org/wiki/Post-traumatic_stress_disorder</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org1733340"></a>STEMM<br />
+<ul class="org-ul">
+<li><a id="org12f45e0"></a>Systems Sciences, Misc<br />
+<ul class="org-ul">
+<li><a id="orga8c523a"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org8886985"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org8abb541"></a>Worldly Matters<br />
+<ul class="org-ul">
+<li><a id="org14e7391"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org59fee88"></a>Arts<br />
+<ul class="org-ul">
+<li><a id="org0a3900c"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org91ba808"></a>Special Topics<br /></li>
+<li><a id="org82aecfb"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org2264f91"></a>Case Studies<br />
+<div class="outline-text-6" id="text-4-3-4-5-6">
+<ul class="org-ul">
+<li>T. F. Oltmanns, M. T. Martin, J. M. Neale, and G. C. Davison, Case Studies in Abnormal Psychology, 10th edition. Hoboken, NJ: Wiley, 2014.</li>
+
+<li>O. Sacks, <i>An Anthropologist on Mars.</i> Pan Macmillan, 2011.</li>
+<li>O. Sacks, <i>The Man Who Mistook His Wife for a Hat.</i> Pan Macmillan, 2014.
+<ul class="org-ul">
+<li>While principally a neurologist, Sacks wrote so beautifully that even pro writers probably envy him.</li>
+</ul></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org08c78a5"></a>Misc<br /></li>
+</ol>
+</div>
+<div id="outline-container-org28aab02" class="outline-4">
+<h4 id="org28aab02"><span class="section-number-4">4.3.5.</span> Arts</h4>
+<div class="outline-text-4" id="text-4-3-5">
+</div>
+<ol class="org-ol">
+<li><a id="orgc593a7d"></a>Misc<br /></li>
+</ol>
+</div>
+<div id="outline-container-org84c00b8" class="outline-4">
+<h4 id="org84c00b8"><span class="section-number-4">4.3.6.</span> Special Topics</h4>
+<div class="outline-text-4" id="text-4-3-6">
+</div>
+<ol class="org-ol">
+<li><a id="orgf4233ce"></a>Phantom Limbs<br />
+<div class="outline-text-5" id="text-4-3-6-1">
+<ul class="org-ul">
+<li>V. S. Ramachandran and S. Blakeslee, <i>Phantoms in the Brain: Human Nature and the Architecture of the Mind.</i> Fourth Estate, 1999.</li>
+</ul>
+</div>
+</li>
+<li><a id="org9614bb9"></a>Self-Help<br />
+<ol class="org-ol">
+<li><a id="org81e3aa1"></a>General<br />
+<div class="outline-text-6" id="text-4-3-6-2-1">
+<ul class="org-ul">
+<li>“Self-help,” Wikipedia. May 04, 2025. Accessed: Jun. 15, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Self-help&amp;oldid=1288789615">https://en.wikipedia.org/w/index.php?title=Self-help&amp;oldid=1288789615</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org03f6fc5"></a>STEMM<br />
+<ul class="org-ul">
+<li><a id="org01dffa0"></a>Systems Sciences, Misc<br />
+<div class="outline-text-7" id="text-org01dffa0">
+<ul class="org-ul">
+<li>R. Ison, Systems Practice: How to Act: In situations of uncertainty and complexity in a climate-change world, 2nd edition. Springer, 2017.</li>
+</ul>
+</div>
+</li>
+<li><a id="org1919546"></a>Misc<br />
+<div class="outline-text-7" id="text-org1919546">
+<ul class="org-ul">
+<li>N. Giansiracusa, “Ruled by Numbers: How Data Dominates Every Facet of Our Daily Lives,” Literary Hub. Accessed: Aug. 14, 2025. [Online]. Available: <a href="https://lithub.com/ruled-by-numbers-how-data-dominates-every-facet-of-our-daily-lives/">https://lithub.com/ruled-by-numbers-how-data-dominates-every-facet-of-our-daily-lives/</a></li>
+
+<li>C. Hall, “How to instantly be better at things,” Big Think. Accessed: Aug. 12, 2025. [Online]. Available: <a href="https://bigthink.com/smart-skills/how-to-instantly-be-better-at-things/">https://bigthink.com/smart-skills/how-to-instantly-be-better-at-things/</a></li>
+
+<li>J. Browning, “Four Requirements for High Performance,” Big Think. Accessed: Aug. 12, 2025. [Online]. Available: <a href="https://bigthink.com/plus/four-requirements-for-high-performance/">https://bigthink.com/plus/four-requirements-for-high-performance/</a></li>
+
+<li>cxdig, “When Rivalry Backfires: How Individual Skill and Risk of Status Loss Moderate the Effects of Rivalry on Performance,” Complexity Digest. Accessed: Aug. 07, 2025. [Online]. Available: <a href="https://comdig.unam.mx/2025/08/06/when-rivalry-backfires-how-individual-skill-and-risk-of-status-loss-moderate-the-effects-of-rivalry-on-performance/">https://comdig.unam.mx/2025/08/06/when-rivalry-backfires-how-individual-skill-and-risk-of-status-loss-moderate-the-effects-of-rivalry-on-performance/</a></li>
+<li>“A new ‘field theory’ reveals the hidden forces that guide us | Aeon Essays,” Aeon. Accessed: Nov. 07, 2024. [Online]. Available: <a href="https://aeon.co/essays/a-new-field-theory-reveals-the-hidden-forces-that-guide-us">https://aeon.co/essays/a-new-field-theory-reveals-the-hidden-forces-that-guide-us</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgcda2898"></a>Worldly Matters<br />
+<ul class="org-ul">
+<li><a id="org31e6af7"></a>Misc<br />
+<div class="outline-text-7" id="text-org31e6af7">
+<ul class="org-ul">
+<li>J. Macy and C. Johnstone, Active Hope (revised): How to Face the Mess We’re in with Unexpected Resilience and Creative Power. Novato, California: New World Library, 2022.</li>
+
+<li>“Humble Book Bundle: Adulting for Dummies by Wiley,” Humble Bundle. Accessed: Jan. 09, 2026. [Online]. Available: <a href="https://www.humblebundle.com/books/adulting-for-dummies-wiley-books">https://www.humblebundle.com/books/adulting-for-dummies-wiley-books</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgdcdace2"></a>Core<br /></li>
+<li><a id="org0bf1602"></a>Arts<br />
+<ul class="org-ul">
+<li><a id="orgabbc6ec"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org2ee5d4f"></a>Special Topics<br />
+<ul class="org-ul">
+<li><a id="org2703c26"></a>Possibly MisInfo/DisInfo<br />
+<ul class="org-ul">
+<li><a id="orgda3fb32"></a>Fortune-telling<br />
+<div class="outline-text-8" id="text-orgda3fb32">
+<ul class="org-ul">
+<li>“Fortune-telling,” Wikipedia. Nov. 16, 2022. Accessed: Nov. 18, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Fortune-telling&amp;oldid=1122227483">https://en.wikipedia.org/w/index.php?title=Fortune-telling&amp;oldid=1122227483</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org28e7d14"></a>Palmistry<br />
+<div class="outline-text-8" id="text-org28e7d14">
+<ul class="org-ul">
+<li>“Palmistry,” Wikipedia. Oct. 16, 2022. Accessed: Nov. 18, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Palmistry&amp;oldid=1116445278">https://en.wikipedia.org/w/index.php?title=Palmistry&amp;oldid=1116445278</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org541f83b"></a>Ikigai<br />
+<div class="outline-text-7" id="text-org541f83b">
+<ul class="org-ul">
+<li>F. Miralles and H. García, The Book of Ichigo Ichie: The Art of Making the Most of Every Moment, the Japanese Way. Hachette UK, 2020.</li>
+<li>H. García and F. Miralles, The Ikigai Journey: A Practical Guide to Finding Happiness and Purpose the Japanese Way. チャールズ・イー・タトル出版, 2020.</li>
+<li>H. García and F. Miralles, Ikigai: The Japanese secret to a long and happy life. Random House, 2017.</li>
+</ul>
+</div>
+</li>
+<li><a id="org00f8873"></a>Articles, Essays<br />
+<div class="outline-text-7" id="text-org00f8873">
+<ul class="org-ul">
+<li>R. Dabas, “The art of failing forward,” Chemistry World. Accessed: May 26, 2025. [Online]. Available: <a href="https://www.chemistryworld.com/opinion/the-art-of-failing-forward/4020489.article">https://www.chemistryworld.com/opinion/the-art-of-failing-forward/4020489.article</a></li>
+<li>T. M. P. Reader, “The Beguiling, Bizarre World of Midcentury Self-Help Records,” The MIT Press Reader. Accessed: Oct. 25, 2024. [Online]. Available: <a href="https://thereader.mitpress.mit.edu/the-beguiling-bizarre-world-of-midcentury-self-help-records/">https://thereader.mitpress.mit.edu/the-beguiling-bizarre-world-of-midcentury-self-help-records/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgd792ff7"></a>Texts<br />
+<div class="outline-text-7" id="text-orgd792ff7">
+<ul class="org-ul">
+<li>A. Brones, <b>Live Lagom: Balanced Living, The Swedish Way.</b> Random House, 2017.</li>
+<li>C. Hamilton and T. S. of Life, <b>How to Deal with Adversity.</b> Pan Macmillan, 2014.</li>
+<li>N. Lähteenmäki, N. Rosendahl, A. Hoffman, and J. Oliver, <i>The Book of You: Daily Micro-Actions for a Happier, Healthier You.</i> Penguin Books, Limited, 2015.</li>
+<li>S. Kumar, You Are, Therefore I Am: A Declaration of Dependence. Green Books, 2002.</li>
+<li>S. Kumar, Elegant Simplicity: The Art of Living Well. New Society Publisher, 2019.</li>
+<li>S. Masuno, <i>Zen: The Art of Simple Living.</i> 2019.</li>
+<li>E. F. Schumacher, <i>A Guide for the Perplexed.</i> Vintage, 1995.</li>
+<li>E. Fromm, <i>Man for Himself: An Inquiry Into the Psychology of Ethics.</i> Open Road Media, 2013.</li>
+<li>G. Saunders, <i>Congratulations, by the Way: Some Thoughts on Kindness.</i> A&amp;C Black, 2014.</li>
+<li>H. Prather, <i>Notes to Myself: My Struggle to Become a Person.</i> Random House Publishing Group, 2009.</li>
+<li>R. Wiseman, <i>Quirkology: The Curious Science of Everyday Lives.</i> Pan Macmillan Limited, 2008.</li>
+<li>S. Johnson, <i>Who Moved My Cheese?: An Amazing Way to Deal with Change in Your Work and in Your Life.</i> Penguin, 1998.</li>
+</ul>
+</div>
+</li>
+<li><a id="org1cc4096"></a>Hindi<br />
+<div class="outline-text-7" id="text-org1cc4096">
+<ul class="org-ul">
+<li>S. Masuno, Zen : Saral Jeevan Jeene ki Kala. Manjul Publishing House, 2021.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orge94c925"></a>Misc<br />
+<div class="outline-text-6" id="text-4-3-6-2-7">
+<ul class="org-ul">
+<li>“Why we should embrace ‘nepantla’ – the in-betweenness of life | Psyche Ideas.” Accessed: Feb. 10, 2026. [Online]. Available: <a href="https://psyche.co/ideas/why-we-should-embrace-nepantla-the-in-betweenness-of-life">https://psyche.co/ideas/why-we-should-embrace-nepantla-the-in-betweenness-of-life</a></li>
+
+<li>“Work,” Joanna Macy &amp; Her Work. Accessed: Feb. 07, 2026. [Online]. Available: <a href="https://www.joannamacy.net/work">https://www.joannamacy.net/work</a></li>
+
+<li>O. Scharmer and E. Pomeroy, “Fourth Person: The Knowing of the Field,” Journal of Awareness-Based Systems Change, vol. 4, no. 1, pp. 19–48, May 2024, doi: 10.47061/jasc.v4i1.7909.</li>
+
+<li>H. Gunnsteinsdottir, InnSaei: Icelandic wisdom for turbulent times. London: Lagom, 2024.</li>
+
+<li>“Nate Silver: Habits of highly successful risk-takers,” Big Think. Accessed: Sep. 04, 2025. [Online]. Available: <a href="https://bigthink.com/series/the-big-think-interview/nate-silver-risk/">https://bigthink.com/series/the-big-think-interview/nate-silver-risk/</a></li>
+
+<li>C. Sandis, “The best books on human action,” Shepherd. Accessed: Aug. 23, 2025. [Online]. Available: <a href="https://shepherd.com/best-books/human-action">https://shepherd.com/best-books/human-action</a></li>
+
+<li>J. Harsono, Self Reiki: Tune in to Your Life Force to Achieve Harmony and Balance. DK, 2019.</li>
+<li>“A Little Book of Self Care.” Accessed: Aug. 18, 2025. [Online]. Available: <a href="http://www.amazon.in/A-Little-Book-of-Self-Care-6-book-series/dp/B09NQ3W5JN?ref=dbs_m_mng_rwt_0000_share">http://www.amazon.in/A-Little-Book-of-Self-Care-6-book-series/dp/B09NQ3W5JN?ref=dbs_m_mng_rwt_0000_share</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“The Case for Pragmatic Progress,” Los Angeles Review of Books. Accessed: Aug. 14, 2025. [Online]. Available: <a href="https://lareviewofbooks.org/article/the-case-for-pragmatic-progress">https://lareviewofbooks.org/article/the-case-for-pragmatic-progress</a></li>
+
+<li>D. Markovits, “How Life Became an Endless, Terrible Competition,” The Atlantic, Aug. 19, 2019. Accessed: Aug. 13, 2025. [Online]. Available: <a href="https://www.theatlantic.com/magazine/archive/2019/09/meritocracys-miserable-winners/594760/">https://www.theatlantic.com/magazine/archive/2019/09/meritocracys-miserable-winners/594760/</a></li>
+
+<li>T. Editors, “Life Advice From the Armed Forces,” JSTOR Daily. Accessed: Jun. 20, 2025. [Online]. Available: <a href="https://daily.jstor.org/life-advice-from-the-armed-forces/">https://daily.jstor.org/life-advice-from-the-armed-forces/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“How to cope with disruptive changes in life | Psyche Guides.” Accessed: Jan. 17, 2026. [Online]. Available: <a href="https://psyche.co/guides/how-to-accept-and-adapt-to-disruptive-changes-in-life">https://psyche.co/guides/how-to-accept-and-adapt-to-disruptive-changes-in-life</a></li>
+
+<li>“Humble Book Bundle: Adulting for Dummies by Wiley,” Humble Bundle. Accessed: Feb. 01, 2026. [Online]. Available: <a href="https://www.humblebundle.com/books/adulting-for-dummies-wiley-books">https://www.humblebundle.com/books/adulting-for-dummies-wiley-books</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Want things to go well? Plan like a defensive pessimist | Psyche Guides.” Accessed: Feb. 05, 2026. [Online]. Available: <a href="https://psyche.co/guides/want-things-to-go-well-plan-like-a-defensive-pessimist">https://psyche.co/guides/want-things-to-go-well-plan-like-a-defensive-pessimist</a></li>
+</ul>
+
+
+
+
+<ul class="org-ul">
+<li>“True mastery demands going beyond the rules to learn for yourself | Aeon Videos.” Accessed: Feb. 04, 2026. [Online]. Available: <a href="https://aeon.co/videos/true-mastery-demands-going-beyond-the-rules-to-learn-for-yourself">https://aeon.co/videos/true-mastery-demands-going-beyond-the-rules-to-learn-for-yourself</a></li>
+<li>“Figure It Out: The Art of Living through Systems Failure.” Accessed: Feb. 07, 2026. [Online]. Available: <a href="https://pb.sandpoints.org/inquiry/snadisedruze/">https://pb.sandpoints.org/inquiry/snadisedruze/</a></li>
+
+<li>bell hooks, All About Love: New Visions. New York: William Morrow Paperbacks, 2018.</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org4b7a7d4"></a>Logo Therapy<br />
+<div class="outline-text-5" id="text-4-3-6-3">
+<ul class="org-ul">
+<li>V. E. Frankl, <i>Man's Search For Meaning: The classic tribute to hope from the Holocaust.</i> Random House, 2013.</li>
+<li>V. E. Frankl, <i>Man's Search For Ultimate Meaning.</i> Hachette UK, 2018.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgce6e8ed"></a>Popular Resources<br />
+<ol class="org-ol">
+<li><a id="org833b227"></a>Texts<br />
+<div class="outline-text-6" id="text-4-3-6-4-1">
+<ul class="org-ul">
+<li>P. Perry and T. S. of Life, How to Stay Sane. Pan Macmillan, 2012.</li>
+<li>J. Kaag, Sick Souls, Healthy Minds: How William James Can Save Your Life. Princeton University Press, 2021.</li>
+</ul>
+</div>
+</li>
+<li><a id="org616a135"></a>Articles, Essays<br />
+<div class="outline-text-6" id="text-4-3-6-4-2">
+<ul class="org-ul">
+<li>“What a spiritual high shares with a mental breakdown | Aeon Essays,” Aeon. <a href="https://aeon.co/essays/what-a-spiritual-high-shares-with-a-mental-breakdown">https://aeon.co/essays/what-a-spiritual-high-shares-with-a-mental-breakdown</a> (accessed Feb. 26, 2022).</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-org9353be4" class="outline-4">
+<h4 id="org9353be4"><span class="section-number-4">4.3.7.</span> Misc</h4>
+<div class="outline-text-4" id="text-4-3-7">
+<ul class="org-ul">
+<li>S. Fell, “The dementia detector.” Accessed: Oct. 30, 2025. [Online]. Available: <a href="https://www.cam.ac.uk/stories/dementia-detector">https://www.cam.ac.uk/stories/dementia-detector</a></li>
+
+<li>A. Surana, “Sitaare Zameen Par: Preaching Over Storytelling In A Neurodivergent Tale,” Feminism in India. Accessed: Jul. 01, 2025. [Online]. Available: <a href="https://feminisminindia.com/2025/07/01/sitaare-zameen-par-preaching-over-storytelling-in-a-neurodivergent-tale/">https://feminisminindia.com/2025/07/01/sitaare-zameen-par-preaching-over-storytelling-in-a-neurodivergent-tale/</a></li>
+
+<li>“Mental illness and substance use: genes show a two-way street | Psyche Ideas,” Psyche. Accessed: Jul. 09, 2024. [Online]. Available: <a href="https://psyche.co/ideas/mental-illness-and-substance-use-genes-show-a-two-way-street">https://psyche.co/ideas/mental-illness-and-substance-use-genes-show-a-two-way-street</a></li>
+
+<li>V. S. Ramachandran, <b>The Emerging Mind: The Reith Lectures 2003.</b> Profile Books, 2003.</li>
+
+<li><i>“Telephone therapy is convenient and it works. Let’s use it more | Psyche Ideas,”</i> Psyche. <a href="https://psyche.co/ideas/telephone-therapy-is-convenient-and-it-works-lets-use-it-more">https://psyche.co/ideas/telephone-therapy-is-convenient-and-it-works-lets-use-it-more</a> (accessed Nov. 27, 2020).</li>
+
+<li>“Free yourself from the tentacles of pain with radical acceptance | Aeon Essays,” Aeon. <a href="https://aeon.co/essays/free-yourself-from-the-tentacles-of-pain-with-radical-acceptance">https://aeon.co/essays/free-yourself-from-the-tentacles-of-pain-with-radical-acceptance</a> (accessed Jul. 19, 2021).</li>
+
+<li>“What the p-factor says about the root of all mental illness | Aeon Essays,” Aeon. <a href="https://aeon.co/essays/what-the-p-factor-says-about-the-root-of-all-mental-illness">https://aeon.co/essays/what-the-p-factor-says-about-the-root-of-all-mental-illness</a> (accessed Jul. 18, 2021).</li>
+
+<li>“The brain’s reading of the body’s state is key to mental health | Psyche Ideas,” Psyche. <a href="https://psyche.co/ideas/the-brains-reading-of-the-bodys-state-is-key-to-mental-health">https://psyche.co/ideas/the-brains-reading-of-the-bodys-state-is-key-to-mental-health</a> (accessed Feb. 17, 2022).</li>
+
+<li>“Suicide risk and social media: is it a landmine or a lifeline? | Psyche Ideas,” Psyche. <a href="https://psyche.co/ideas/suicide-risk-and-social-media-is-it-a-landmine-or-a-lifeline">https://psyche.co/ideas/suicide-risk-and-social-media-is-it-a-landmine-or-a-lifeline</a> (accessed Feb. 17, 2022).</li>
+
+<li>“How to decide whether to take antidepressants | Psyche Guides,” Psyche. <a href="https://psyche.co/guides/how-to-decide-whether-to-start-taking-antidepressant-pills">https://psyche.co/guides/how-to-decide-whether-to-start-taking-antidepressant-pills</a> (accessed Feb. 17, 2022).</li>
+
+<li>“How to know if you’re addicted | Psyche Guides,” Psyche. <a href="https://psyche.co/guides/how-to-know-if-youre-addicted-to-alcohol-or-drugs">https://psyche.co/guides/how-to-know-if-youre-addicted-to-alcohol-or-drugs</a> (accessed Feb. 17, 2022).</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org2bdf840" class="outline-3">
+<h3 id="org2bdf840"><span class="section-number-3">4.4.</span> Psychiatry</h3>
+<div class="outline-text-3" id="text-4-4">
+</div>
+<div id="outline-container-org1077e51" class="outline-4">
+<h4 id="org1077e51"><span class="section-number-4">4.4.1.</span> General</h4>
+</div>
+<div id="outline-container-orgc952c12" class="outline-4">
+<h4 id="orgc952c12"><span class="section-number-4">4.4.2.</span> STEMM</h4>
+<div class="outline-text-4" id="text-4-4-2">
+</div>
+<ol class="org-ol">
+<li><a id="org27692a0"></a>Systems Sciences<br /></li>
+<li><a id="org2310c13"></a>Misc<br />
+<div class="outline-text-5" id="text-4-4-2-2">
+<ul class="org-ul">
+<li>M. Scheffer et al., “A Dynamical Systems View of Psychiatric Disorders—Theory: A Review,” JAMA Psychiatry, Apr. 2024, doi: 10.1001/jamapsychiatry.2024.0215.
+<ul class="org-ul">
+<li>cxdig, “A Dynamical Systems View of Psychiatric Disorders—Theory: A Review,” Complexity Digest. Accessed: Apr. 14, 2024. [Online]. Available: <a href="https://comdig.unam.mx/2024/04/13/a-dynamical-systems-view-of-psychiatric-disorders-theory-a-review/">https://comdig.unam.mx/2024/04/13/a-dynamical-systems-view-of-psychiatric-disorders-theory-a-review/</a></li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="org916d14c"></a>Computer Science and Engineering<br />
+<div class="outline-text-5" id="text-4-4-2-3">
+<ul class="org-ul">
+<li>&lt;a href=’<a href="https://www">https://www</a> maxlamparth com’&gt;Max L. and &lt;a href=’<a href="https://med">https://med</a> stanford edu/profiles/declan-grabb’&gt;Declan Grabb&lt;/a&gt;, “MENTAT: A Clinician-Annotated Benchmark for Complex Psychiatric Decision-Making,” SAIL Blog. Accessed: Apr. 05, 2025. [Online]. Available: <a href="http://ai.stanford.edu/blog/mentat/">http://ai.stanford.edu/blog/mentat/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org8a7f38a"></a>Misc<br /></li>
+</ol>
+</div>
+<div id="outline-container-org28039a7" class="outline-4">
+<h4 id="org28039a7"><span class="section-number-4">4.4.3.</span> Worldly Matters</h4>
+<div class="outline-text-4" id="text-4-4-3">
+</div>
+<ol class="org-ol">
+<li><a id="orgc920478"></a>People<br />
+<div class="outline-text-5" id="text-4-4-3-1">
+<ul class="org-ul">
+<li>“Iain McGilchrist,” Wikipedia. Dec. 01, 2021. Accessed: Dec. 16, 2021. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Iain_McGilchrist&amp;oldid=1058155173">https://en.wikipedia.org/w/index.php?title=Iain_McGilchrist&amp;oldid=1058155173</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgfd80bcc"></a>Misc<br />
+<div class="outline-text-5" id="text-4-4-3-2">
+<ul class="org-ul">
+<li>E. Cahan, “For-Profit Corporations Are Buying Up More Psychiatric Hospitals. Some Flout Federal Law With Scarce Repercussions.,” ProPublica. Accessed: Sep. 23, 2025. [Online]. Available: <a href="https://www.propublica.org/article/psychiatric-hospitals-emtala-mental-health-profit">https://www.propublica.org/article/psychiatric-hospitals-emtala-mental-health-profit</a></li>
+<li>E. Cahan, “Psychiatric Hospitals Turn Away Patients Who Need Urgent Care. The Facilities Face Few Consequences.,” ProPublica. Accessed: Sep. 23, 2025. [Online]. Available: <a href="https://www.propublica.org/article/psychiatric-hospitals-emtala-violations-mental-health">https://www.propublica.org/article/psychiatric-hospitals-emtala-violations-mental-health</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Psychiatrist Robert Jay Lifton Dies at 99; Explored Human Darkness, from Nazi Doctors to Hiroshima,” Democracy Now! Accessed: Sep. 09, 2025. [Online]. Available: <a href="https://www.democracynow.org/2025/9/8/remembering_robert_jay_lifton_archival_interview">https://www.democracynow.org/2025/9/8/remembering_robert_jay_lifton_archival_interview</a></li>
+<li>C. Gainty, “The dark side of psychiatry – how it has been used to control societies,” The Conversation. Accessed: Apr. 02, 2025. [Online]. Available: <a href="http://theconversation.com/the-dark-side-of-psychiatry-how-it-has-been-used-to-control-societies-248493">http://theconversation.com/the-dark-side-of-psychiatry-how-it-has-been-used-to-control-societies-248493</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org25fe708" class="outline-4">
+<h4 id="org25fe708"><span class="section-number-4">4.4.4.</span> Core</h4>
+<div class="outline-text-4" id="text-4-4-4">
+<ul class="org-ul">
+<li>J. R. Geddes and N. C. Andreasen, <i>New Oxford Textbook of Psychiatry.</i> Oxford University Press, 2020.</li>
+<li>P. Harrison, P. Cowen, T. Burns, and M. Fazel, <i>Shorter Oxford Textbook of Psychiatry.</i> Oxford University Press, 2017.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>D. Adam, “The ‘bible for psychiatry’ is getting a rewrite: your guide to the next DSM,” Nature, Feb. 2026, doi: 10.1038/d41586-026-00283-8.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc56ab6a" class="outline-4">
+<h4 id="orgc56ab6a"><span class="section-number-4">4.4.5.</span> Special Topics</h4>
+<div class="outline-text-4" id="text-4-4-5">
+</div>
+<ol class="org-ol">
+<li><a id="orgf18dacd"></a>Pop Psychiatry<br />
+<div class="outline-text-5" id="text-4-4-5-1">
+<ul class="org-ul">
+<li>R. M. Nesse, Good Reasons for Bad Feelings: Insights from the Frontier of Evolutionary Psychiatry. Penguin UK, 2019.</li>
+
+<li>M. Pollan, How to Change Your Mind: What the New Science of Psychedelics Teaches Us about Consciousness, Dying, Addiction, Depression, and Transcendence. Penguin Books, 2019.</li>
+</ul>
+</div>
+</li>
+<li><a id="org4e1e045"></a>Classics<br />
+<div class="outline-text-5" id="text-4-4-5-2">
+<ul class="org-ul">
+<li>A. Huxley, The Doors of Perception: And Heaven and Hell. Random House, 2010.</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org06a770d" class="outline-4">
+<h4 id="org06a770d"><span class="section-number-4">4.4.6.</span> Misc</h4>
+</div>
+</div>
+</div>
+<div id="outline-container-org0bcf45d" class="outline-2">
+<h2 id="org0bcf45d"><span class="section-number-2">5.</span> Arts</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-org76270b5" class="outline-3">
+<h3 id="org76270b5"><span class="section-number-3">5.1.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-orge791d81" class="outline-2">
+<h2 id="orge791d81"><span class="section-number-2">6.</span> Special Topics</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+<div id="outline-container-orgc056f53" class="outline-3">
+<h3 id="orgc056f53"><span class="section-number-3">6.1.</span> Crises</h3>
+<div class="outline-text-3" id="text-6-1">
+<ul class="org-ul">
+<li>“Mental Health Resources for Crises (Climate, Pandemics, and Personal Crises),” UCSF Department of Psychiatry and Behavioral Sciences, Mar. 20, 2020. <a href="https://psychiatry.ucsf.edu/copingresources">https://psychiatry.ucsf.edu/copingresources</a> (accessed Feb. 14, 2022).</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgc82fd44" class="outline-2">
+<h2 id="orgc82fd44"><span class="section-number-2">7.</span> Misc</h2>
+<div class="outline-text-2" id="text-7">
+<ul class="org-ul">
+<li>K. P.-L. Sugiura Allison Parshall, Fonda Mwangi, Alex, “Big changes could be coming to how we diagnose mental health,” Scientific American. Accessed: Feb. 07, 2026. [Online]. Available: <a href="https://www.scientificamerican.com/podcast/episode/a-push-to-redraw-the-map-of-mental-illness/">https://www.scientificamerican.com/podcast/episode/a-push-to-redraw-the-map-of-mental-illness/</a></li>
+
+<li>April 2025, “Global and mental health.” Accessed: Nov. 16, 2025. [Online]. Available: <a href="https://oxford.shorthandstories.com/global-and-mental-health/">https://oxford.shorthandstories.com/global-and-mental-health/</a></li>
+
+<li>“How strength training saved me from my own mind | Psyche Turning Points.” Accessed: Nov. 15, 2025. [Online]. Available: <a href="https://psyche.co/turning-points/how-strength-training-saved-me-from-my-own-mind">https://psyche.co/turning-points/how-strength-training-saved-me-from-my-own-mind</a></li>
+
+<li>“Home,” Dr. Olivia Remes. Accessed: Oct. 11, 2025. [Online]. Available: <a href="https://www.droliviaremes.com">https://www.droliviaremes.com</a></li>
+
+<li>“Mentorship and hope can solve the youth mental health crisis | Aeon Essays,” Aeon. Accessed: Sep. 06, 2025. [Online]. Available: <a href="https://aeon.co/essays/mentorship-and-hope-can-solve-the-youth-mental-health-crisis">https://aeon.co/essays/mentorship-and-hope-can-solve-the-youth-mental-health-crisis</a></li>
+
+<li>M. Basu, “Spouses tend to share psychiatric disorders, massive study finds,” Nature, Aug. 2025, doi: 10.1038/d41586-025-02772-8.</li>
+
+<li>“Understanding the bidirectional relationship between sleep and mental health.” Accessed: Aug. 20, 2025. [Online]. Available: <a href="https://news.stanford.edu/stories/2025/08/sleep-mental-health-mood-impact-science-research">https://news.stanford.edu/stories/2025/08/sleep-mental-health-mood-impact-science-research</a></li>
+
+<li>“Manage your emotions, in 9 minutes,” Big Think. Accessed: Jul. 24, 2025. [Online]. Available: <a href="https://bigthink.com/the-well/how-to-manage-your-emotions/">https://bigthink.com/the-well/how-to-manage-your-emotions/</a></li>
+
+<li>A. Kuzub, “Taking a break from Facebook and Instagram can boost emotional well-being, research finds,” Northeastern Global News. Accessed: May 03, 2025. [Online]. Available: <a href="https://news.northeastern.edu/2025/05/01/social-media-break-mental-health-study/">https://news.northeastern.edu/2025/05/01/social-media-break-mental-health-study/</a></li>
+
+<li>“Psychotherapy under the microscope: how exactly does it work? | Psyche Ideas,” Psyche. Accessed: Feb. 19, 2025. [Online]. Available: <a href="https://psyche.co/ideas/psychotherapy-under-the-microscope-how-exactly-does-it-work">https://psyche.co/ideas/psychotherapy-under-the-microscope-how-exactly-does-it-work</a></li>
+
+<li>F. Naudet, “Hallucinogens approved for treating psychiatric disorders: what does the science say?,” The Conversation. Accessed: Dec. 27, 2024. [Online]. Available: <a href="http://theconversation.com/hallucinogens-approved-for-treating-psychiatric-disorders-what-does-the-science-say-245303">http://theconversation.com/hallucinogens-approved-for-treating-psychiatric-disorders-what-does-the-science-say-245303</a></li>
+
+<li>“Mental health campaigns are no substitute for well-funded care | Aeon Essays,” Aeon. Accessed: Oct. 15, 2024. [Online]. Available: <a href="https://aeon.co/essays/mental-health-campaigns-are-no-substitute-for-well-funded-care">https://aeon.co/essays/mental-health-campaigns-are-no-substitute-for-well-funded-care</a></li>
+
+<li>A. Waldman, “How UnitedHealth’s Playbook for Limiting Mental Health Coverage Puts Countless Americans’ Treatment at Risk,” ProPublica. Accessed: Nov. 20, 2024. [Online]. Available: <a href="https://www.propublica.org/article/unitedhealth-mental-health-care-denied-illegal-algorithm">https://www.propublica.org/article/unitedhealth-mental-health-care-denied-illegal-algorithm</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>Yamini, “There’s a silent crisis of men’s mental health in India,” Down To Earth. Accessed: Oct. 18, 2024. [Online]. Available: <a href="https://www.downtoearth.org.in/health/theres-a-silent-crisis-of-mens-mental-health-in-india">https://www.downtoearth.org.in/health/theres-a-silent-crisis-of-mens-mental-health-in-india</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>J. Deeksha, “Can prayer and medicine work together to cure mental illness?,” Scroll.in. <a href="https://scroll.in/article/1029561/can-prayer-and-medicine-work-together-to-cure-mental-illness">https://scroll.in/article/1029561/can-prayer-and-medicine-work-together-to-cure-mental-illness</a> (accessed Aug. 04, 2022).</li>
+<li>“Advance directives for mental illness raise deep ethical questions | Psyche Ideas,” Psyche. <a href="https://psyche.co/ideas/advance-directives-for-mental-health-raise-deep-ethical-questions">https://psyche.co/ideas/advance-directives-for-mental-health-raise-deep-ethical-questions</a> (accessed Aug. 04, 2022).</li>
+
+<li>“How much you ‘body-wander’ could affect your mental health | Psyche Ideas.” Accessed: Jun. 21, 2025. [Online]. Available: <a href="https://psyche.co/ideas/how-much-you-body-wander-could-affect-your-mental-health">https://psyche.co/ideas/how-much-you-body-wander-could-affect-your-mental-health</a></li>
+<li>“£27 million gift funds new Oxford Centre for Emerging Minds Research focused on young people’s mental health | University of Oxford.” Accessed: Aug. 09, 2025. [Online]. Available: <a href="https://www.ox.ac.uk/news/2025-08-06-27-million-gift-funds-new-oxford-centre-emerging-minds-research-focused-young-people">https://www.ox.ac.uk/news/2025-08-06-27-million-gift-funds-new-oxford-centre-emerging-minds-research-focused-young-people</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>K. Kavanagh, “Want a younger brain? Learn another language,” Nature, Nov. 2025, doi: 10.1038/d41586-025-03677-2.</li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>“Tablet-based test flags early cognitive decline,” Nature India, Feb. 2026, doi: 10.1038/d44151-026-00023-x.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>M. Frazer-carroll, Mad World: The Politics of Mental Health. London: Pluto Pr, 2023.</li>
+</ul>
+
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-media.html">Media</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://ourghostorg.github.io/">OurGhostOrg</a></p>
+<p class="date">Created: 2026-07-06 Mon 18:35</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,1242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-07-06 Mon 18:35 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Cognitive Science</title>
+<meta name="author" content="Staff Member(s), [[https://ourghostorg.github.io/][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Cognitive Science</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgc640684">1. General</a></li>
+<li><a href="#org3bc2363">2. Philosophy</a>
+<ul>
+<li><a href="#org736621c">2.1. General</a></li>
+<li><a href="#orgf4d671b">2.2. Handbooks, Companions</a></li>
+<li><a href="#org24d3407">2.3. Stanford Encyclopedia of Philosophy</a></li>
+<li><a href="#org15f64ad">2.4. Special Topics</a>
+<ul>
+<li><a href="#org78be154">2.4.1. Popular Resources</a></li>
+</ul>
+</li>
+<li><a href="#orge49a90f">2.5. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgb069e26">3. STEMM</a>
+<ul>
+<li><a href="#org2561ef4">3.1. Systems Sciences, Misc</a>
+<ul>
+<li><a href="#org9c45572">3.1.1. Complexity Science</a></li>
+<li><a href="#org9ea4aab">3.1.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgb3a24d7">3.2. Biological Sciences, Misc</a></li>
+<li><a href="#org1985aae">3.3. Basic Sciences, Misc</a></li>
+<li><a href="#orgfd4a6ef">3.4. Mathematical, Computational Sciences, Misc</a></li>
+<li><a href="#org4513f2a">3.5. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org2dc5821">4. Worldly Matters</a>
+<ul>
+<li><a href="#org55d57eb">4.1. Orgs</a></li>
+<li><a href="#orgb90ac3f">4.2. Special Groups</a>
+<ul>
+<li><a href="#orgb03fc5c">4.2.1. Women</a></li>
+</ul>
+</li>
+<li><a href="#org236ece4">4.3. Nation States</a>
+<ul>
+<li><a href="#org4e215a0">4.3.1. India</a></li>
+</ul>
+</li>
+<li><a href="#org651466a">4.4. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org04f174e">5. Core</a>
+<ul>
+<li><a href="#org3588c9c">5.1. General</a>
+<ul>
+<li><a href="#orgd923b6c">5.1.1. Encyclopedias</a></li>
+<li><a href="#org64a9105">5.1.2. Undergraduate Texts</a></li>
+<li><a href="#orgc48afac">5.1.3. Graduate Texts</a></li>
+</ul>
+</li>
+<li><a href="#org7ee475f">5.2. Reasoning</a>
+<ul>
+<li><a href="#org73a494b">5.2.1. Open Encylopedia of Cognitive Science</a></li>
+<li><a href="#org3b328e5">5.2.2. Handbooks, Companions, Readers</a></li>
+<li><a href="#org908f328">5.2.3. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org4c0613e">5.3. Learning Theories</a>
+<ul>
+<li><a href="#org35c7615">5.3.1. General</a></li>
+<li><a href="#org5db958e">5.3.2. STEMM</a></li>
+<li><a href="#org7bc5ea6">5.3.3. Core</a></li>
+<li><a href="#orgd252bb4">5.3.4. Special Topics</a></li>
+<li><a href="#orgd2d62db">5.3.5. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org9601c50">5.4. Memory</a>
+<ul>
+<li><a href="#orgcf08ec1">5.4.1. General</a></li>
+<li><a href="#org5cc5b64">5.4.2. Core</a></li>
+<li><a href="#orgb9d2c2e">5.4.3. Special Topics</a></li>
+<li><a href="#org19ad467">5.4.4. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org74241e7">5.5. Attention</a>
+<ul>
+<li><a href="#orge7413b2">5.5.1. General</a></li>
+<li><a href="#org158f074">5.5.2. Special Topics</a></li>
+<li><a href="#orgc3dbb97">5.5.3. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org489e674">5.6. Perception</a>
+<ul>
+<li><a href="#org1180b54">5.6.1. General</a></li>
+<li><a href="#org847e64c">5.6.2. Philosophy</a></li>
+<li><a href="#org92d9e8a">5.6.3. STEMM</a></li>
+<li><a href="#org6608610">5.6.4. Worldly Matters</a></li>
+<li><a href="#org6e2bb1d">5.6.5. Core</a></li>
+<li><a href="#orge894647">5.6.6. Arts</a></li>
+<li><a href="#orgb554764">5.6.7. Special Topics</a></li>
+<li><a href="#org520f77f">5.6.8. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org66841cc">5.7. Practice</a></li>
+</ul>
+</li>
+<li><a href="#orgaf4f318">6. Special Topics</a>
+<ul>
+<li><a href="#org5aa2e39">6.1. Bono</a></li>
+<li><a href="#org8fdd1d3">6.2. Genius</a>
+<ul>
+<li><a href="#org92be897">6.2.1. General</a></li>
+<li><a href="#org529071b">6.2.2. STEMM</a></li>
+<li><a href="#orgca79dfa">6.2.3. World</a></li>
+<li><a href="#org11874b0">6.2.4. Arts</a></li>
+<li><a href="#org61a1f28">6.2.5. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgd8eb29f">6.3. OECS</a></li>
+<li><a href="#org5dde14e">6.4. Popular Resources</a></li>
+</ul>
+</li>
+<li><a href="#orgedb109d">7. Miscellaneous</a>
+<ul>
+<li><a href="#orge5a9806">7.1. Misc</a></li>
+<li><a href="#orga4b9d24">7.2. oecs</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-orgc640684" class="outline-2">
+<h2 id="orgc640684"><span class="section-number-2">1.</span> General</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>“Cognitive science,” Wikipedia. Nov. 26, 2024. Accessed: Jan. 01, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Cognitive_science&amp;oldid=1259664348">https://en.wikipedia.org/w/index.php?title=Cognitive_science&amp;oldid=1259664348</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org3bc2363" class="outline-2">
+<h2 id="org3bc2363"><span class="section-number-2">2.</span> Philosophy</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org736621c" class="outline-3">
+<h3 id="org736621c"><span class="section-number-3">2.1.</span> General</h3>
+</div>
+<div id="outline-container-orgf4d671b" class="outline-3">
+<h3 id="orgf4d671b"><span class="section-number-3">2.2.</span> Handbooks, Companions</h3>
+<div class="outline-text-3" id="text-2-2">
+<ul class="org-ul">
+<li>The Oxford Handbook of Philosophy of Cognitive Science. Oxford, New York: Oxford University Press, 2017.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org24d3407" class="outline-3">
+<h3 id="org24d3407"><span class="section-number-3">2.3.</span> Stanford Encyclopedia of Philosophy</h3>
+<div class="outline-text-3" id="text-2-3">
+<ul class="org-ul">
+<li>C. O’Callaghan, “Auditory Perception,” in The Stanford Encyclopedia of Philosophy, Fall 2021., E. N. Zalta, Ed., Metaphysics Research Lab, Stanford University, 2021. Accessed: Jan. 07, 2025. [Online]. Available: <a href="https://plato.stanford.edu/archives/fall2021/entries/perception-auditory/">https://plato.stanford.edu/archives/fall2021/entries/perception-auditory/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org15f64ad" class="outline-3">
+<h3 id="org15f64ad"><span class="section-number-3">2.4.</span> Special Topics</h3>
+<div class="outline-text-3" id="text-2-4">
+</div>
+<div id="outline-container-org78be154" class="outline-4">
+<h4 id="org78be154"><span class="section-number-4">2.4.1.</span> Popular Resources</h4>
+<div class="outline-text-4" id="text-2-4-1">
+<ul class="org-ul">
+<li>D. C. Dennett, <b>Intuition Pumps and Other Tools for Thinking.</b> Penguin UK, 2013.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orge49a90f" class="outline-3">
+<h3 id="orge49a90f"><span class="section-number-3">2.5.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-orgb069e26" class="outline-2">
+<h2 id="orgb069e26"><span class="section-number-2">3.</span> STEMM</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org2561ef4" class="outline-3">
+<h3 id="org2561ef4"><span class="section-number-3">3.1.</span> Systems Sciences, Misc</h3>
+<div class="outline-text-3" id="text-3-1">
+</div>
+<div id="outline-container-org9c45572" class="outline-4">
+<h4 id="org9c45572"><span class="section-number-4">3.1.1.</span> Complexity Science</h4>
+</div>
+<div id="outline-container-org9ea4aab" class="outline-4">
+<h4 id="org9ea4aab"><span class="section-number-4">3.1.2.</span> Misc</h4>
+<div class="outline-text-4" id="text-3-1-2">
+<ul class="org-ul">
+<li>S. Musslick and A. Bizyaeva, “Examining cognitive flexibility and stability through the lens of dynamical systems,” Current Opinion in Behavioral Sciences, vol. 57, p. 101375, Jun. 2024, doi: 10.1016/j.cobeha.2024.101375.</li>
+
+<li>cxdig, “What Is Intelligence? by Blaise Agüera y Arcas,” Complexity Digest. Accessed: Sep. 01, 2025. [Online]. Available: <a href="https://comdig.unam.mx/2025/08/31/what-is-intelligence-by-blaise-aguera-y-arcas/">https://comdig.unam.mx/2025/08/31/what-is-intelligence-by-blaise-aguera-y-arcas/</a></li>
+
+<li>E. K. Miller, S. L. Brincat, and J. E. Roy, “Cognition is an emergent property,” Current Opinion in Behavioral Sciences, vol. 57, p. 101388, Jun. 2024, doi: 10.1016/j.cobeha.2024.101388.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgb3a24d7" class="outline-3">
+<h3 id="orgb3a24d7"><span class="section-number-3">3.2.</span> Biological Sciences, Misc</h3>
+</div>
+<div id="outline-container-org1985aae" class="outline-3">
+<h3 id="org1985aae"><span class="section-number-3">3.3.</span> Basic Sciences, Misc</h3>
+</div>
+<div id="outline-container-orgfd4a6ef" class="outline-3">
+<h3 id="orgfd4a6ef"><span class="section-number-3">3.4.</span> Mathematical, Computational Sciences, Misc</h3>
+</div>
+<div id="outline-container-org4513f2a" class="outline-3">
+<h3 id="org4513f2a"><span class="section-number-3">3.5.</span> Misc</h3>
+<div class="outline-text-3" id="text-3-5">
+<ul class="org-ul">
+<li>J. Krause, “Collective Intelligence,” Open Encyclopedia of Cognitive Science, Jul. 2024, doi: 10.21428/e2759450.e19abb46.</li>
+<li>H. Richardson, “Developmental Cognitive Neuroscience,” Open Encyclopedia of Cognitive Science, Jul. 2024, doi: 10.21428/e2759450.46da0cd7.</li>
+<li>M. Colombo, “Computational Theory of Mind,” Open Encyclopedia of Cognitive Science, Jul. 2024, doi: 10.21428/e2759450.2780596f.</li>
+<li>J. T. Wixted, “Signal Detection Theory,” Open Encyclopedia of Cognitive Science, Jul. 2024, doi: 10.21428/e2759450.46176256.</li>
+
+<li>cxdig, “Is Every Cognitive Phenomenon Computable?,” Complexity Digest. Accessed: Feb. 20, 2026. [Online]. Available: <a href="https://comdig.cssociety.org/2026/02/19/is-every-cognitive-phenomenon-computable/">https://comdig.cssociety.org/2026/02/19/is-every-cognitive-phenomenon-computable/</a></li>
+
+<li>B. Agüera y Arcas, “What is the future of intelligence? The answer could lie in the story of its evolution,” Nature, vol. 647, no. 8091, pp. 846–850, Nov. 2025, doi: 10.1038/d41586-025-03857-0.</li>
+
+<li>B. A. y Arcas, What Is Intelligence?: Lessons from AI About Evolution, Computing, and Minds. in Antikythera. Cambridge, MA, USA: MIT Press, 2025. Accessed: Sep. 23, 2025. [Online]. Available: <a href="https://mitpress.mit.edu/9780262049955/what-is-intelligence/">https://mitpress.mit.edu/9780262049955/what-is-intelligence/</a></li>
+
+<li>D. Rockmore, “What It’s Like to Brainstorm with a Bot,” The New Yorker, Aug. 09, 2025. Accessed: Aug. 14, 2025. [Online]. Available: <a href="https://www.newyorker.com/culture/the-weekend-essay/what-its-like-to-brainstorm-with-a-bot">https://www.newyorker.com/culture/the-weekend-essay/what-its-like-to-brainstorm-with-a-bot</a></li>
+
+<li>“Your body thinks as much as your mind | Barbara Tversky,” IAI TV - Changing how the world thinks. Accessed: Aug. 13, 2025. [Online]. Available: <a href="https://iai.tv/articles/your-body-thinks-as-much-as-your-mind-auid-3282">https://iai.tv/articles/your-body-thinks-as-much-as-your-mind-auid-3282</a></li>
+
+<li>L. Tweed, “Cognitive Offloading: How AI is Quietly Eroding Our Critical Thinking,” IEEE Computer Society. Accessed: Jul. 29, 2025. [Online]. Available: <a href="https://www.computer.org/publications/tech-news/trends/cognitive-offloading/">https://www.computer.org/publications/tech-news/trends/cognitive-offloading/</a></li>
+
+<li>“Roger Penrose – Why Intelligence Is Not a Computational Process: Breakthrough Discuss 2025 - YouTube.” Accessed: Jul. 16, 2025. [Online]. Available: <a href="https://www.youtube.com/watch?v=iTVN6tFknCg">https://www.youtube.com/watch?v=iTVN6tFknCg</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“How the brain solves complicated problems | Brain and Cognitive Sciences.” Accessed: Jun. 12, 2025. [Online]. Available: <a href="https://bcs.mit.edu/news/how-brain-solves-complicated-problems">https://bcs.mit.edu/news/how-brain-solves-complicated-problems</a></li>
+
+<li>M. Sprevak and M. Colombo, Eds., The Routledge Handbook of the Computational Mind, 1st edition. Milton Park, Abingdon, Oxon ; New York: Routledge, 2018.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org2dc5821" class="outline-2">
+<h2 id="org2dc5821"><span class="section-number-2">4.</span> Worldly Matters</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-org55d57eb" class="outline-3">
+<h3 id="org55d57eb"><span class="section-number-3">4.1.</span> Orgs</h3>
+<div class="outline-text-3" id="text-4-1">
+<ul class="org-ul">
+<li><b>“Leverhulme Centre for the Future of Intelligence: Home.”</b> <a href="http://lcfi.ac.uk/">http://lcfi.ac.uk/</a> (accessed Sep. 09, 2023).</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgb90ac3f" class="outline-3">
+<h3 id="orgb90ac3f"><span class="section-number-3">4.2.</span> Special Groups</h3>
+<div class="outline-text-3" id="text-4-2">
+</div>
+<div id="outline-container-orgb03fc5c" class="outline-4">
+<h4 id="orgb03fc5c"><span class="section-number-4">4.2.1.</span> Women</h4>
+<div class="outline-text-4" id="text-4-2-1">
+<ul class="org-ul">
+<li>“Awards,” Women in Cognitive Science. Accessed: Aug. 16, 2024. [Online]. Available: <a href="https://www.womenincogsci.org/awards">https://www.womenincogsci.org/awards</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org236ece4" class="outline-3">
+<h3 id="org236ece4"><span class="section-number-3">4.3.</span> Nation States</h3>
+<div class="outline-text-3" id="text-4-3">
+</div>
+<div id="outline-container-org4e215a0" class="outline-4">
+<h4 id="org4e215a0"><span class="section-number-4">4.3.1.</span> India</h4>
+<div class="outline-text-4" id="text-4-3-1">
+</div>
+<ol class="org-ol">
+<li><a id="orgb851197"></a>General<br /></li>
+<li><a id="org3ca3d86"></a>Education<br />
+<ol class="org-ol">
+<li><a id="org12b0256"></a>Programmes<br />
+<div class="outline-text-6" id="text-4-3-1-2-1">
+<ul class="org-ul">
+<li>“M.Sc. in Cognitive Science | Humanities &amp; Social Sciences.” Accessed: Jan. 02, 2025. [Online]. Available: <a href="https://hss.iitd.ac.in/article/msc-cognitive-science">https://hss.iitd.ac.in/article/msc-cognitive-science</a></li>
+<li>“Cognitive Science Program|IIT Delhi.” Accessed: Jan. 02, 2025. [Online]. Available: <a href="https://cogsci.iitd.ac.in/">https://cogsci.iitd.ac.in/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org287f13b"></a>Orgs<br />
+<div class="outline-text-6" id="text-4-3-1-2-2">
+<ul class="org-ul">
+<li>“Cognition Lab.” Accessed: Jan. 02, 2025. [Online]. Available: <a href="https://cns.iisc.ac.in/sridhar/about.html">https://cns.iisc.ac.in/sridhar/about.html</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Department of Cognitive and Brain Sciences – IITGN.” Accessed: Jan. 02, 2025. [Online]. Available: <a href="https://cogs.iitgn.ac.in/">https://cogs.iitgn.ac.in/</a></li>
+<li>“Cognitive Science.” Accessed: Jan. 02, 2025. [Online]. Available: <a href="https://www.cgs.iitk.ac.in/">https://www.cgs.iitk.ac.in/</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org9917c51"></a>Misc<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org651466a" class="outline-3">
+<h3 id="org651466a"><span class="section-number-3">4.4.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-org04f174e" class="outline-2">
+<h2 id="org04f174e"><span class="section-number-2">5.</span> Core</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-org3588c9c" class="outline-3">
+<h3 id="org3588c9c"><span class="section-number-3">5.1.</span> General</h3>
+<div class="outline-text-3" id="text-5-1">
+</div>
+<div id="outline-container-orgd923b6c" class="outline-4">
+<h4 id="orgd923b6c"><span class="section-number-4">5.1.1.</span> Encyclopedias</h4>
+<div class="outline-text-4" id="text-5-1-1">
+<ul class="org-ul">
+<li>“Open Encylopedia of Cognitive Science,” Open Encylopedia of Cognitive Science, Accessed: Oct. 02, 2023. [Online]. Available: <a href="https://oecs.mit.edu/">https://oecs.mit.edu/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org64a9105" class="outline-4">
+<h4 id="org64a9105"><span class="section-number-4">5.1.2.</span> Undergraduate Texts</h4>
+<div class="outline-text-4" id="text-5-1-2">
+<ul class="org-ul">
+<li>P. Thagard, <i>Mind: Introduction to Cognitive Science.</i> MIT Press, 2005.</li>
+
+<li>Solso, <i>Cognitive Psychology.</i> Pearson Education India, 1995.</li>
+<li>K. M. Galotti, <i>Cognitive Psychology In and Out of the Laboratory.</i> SAGE, 2013.</li>
+<li>R. R. Hunt and H. C. Ellis, <i>Fundamentals of Cognitive Psychology.</i> McGraw-Hill Higher Education, 2004.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc48afac" class="outline-4">
+<h4 id="orgc48afac"><span class="section-number-4">5.1.3.</span> Graduate Texts</h4>
+<div class="outline-text-4" id="text-5-1-3">
+<ul class="org-ul">
+<li><b>“The Cognitive Neurosciences, Sixth Edition | The MIT Press.”</b> <a href="https://mitpress.mit.edu/books/cognitive-neurosciences-sixth-edition">https://mitpress.mit.edu/books/cognitive-neurosciences-sixth-edition</a> (accessed Aug. 12, 2020).</li>
+
+<li>K. J. Holyoak and R. G. Morrison, <b>The Cambridge Handbook of Thinking and Reasoning</b>, Cambridge University Press, 2005.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org7ee475f" class="outline-3">
+<h3 id="org7ee475f"><span class="section-number-3">5.2.</span> Reasoning</h3>
+<div class="outline-text-3" id="text-5-2">
+</div>
+<div id="outline-container-org73a494b" class="outline-4">
+<h4 id="org73a494b"><span class="section-number-4">5.2.1.</span> Open Encylopedia of Cognitive Science</h4>
+<div class="outline-text-4" id="text-5-2-1">
+<ul class="org-ul">
+<li>H. Mercier, “Reasoning and Argumentation,” Open Encyclopedia of Cognitive Science, Jul. 2024, doi: 10.21428/e2759450.96cf440a.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org3b328e5" class="outline-4">
+<h4 id="org3b328e5"><span class="section-number-4">5.2.2.</span> Handbooks, Companions, Readers</h4>
+<div class="outline-text-4" id="text-5-2-2">
+<ul class="org-ul">
+<li>K. J. Holyoak and R. G. Morrison, <b>The Cambridge Handbook of Thinking and Reasoning</b>, Cambridge University Press, 2005.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org908f328" class="outline-4">
+<h4 id="org908f328"><span class="section-number-4">5.2.3.</span> Misc</h4>
+</div>
+</div>
+<div id="outline-container-org4c0613e" class="outline-3">
+<h3 id="org4c0613e"><span class="section-number-3">5.3.</span> Learning Theories</h3>
+<div class="outline-text-3" id="text-5-3">
+</div>
+<div id="outline-container-org35c7615" class="outline-4">
+<h4 id="org35c7615"><span class="section-number-4">5.3.1.</span> General</h4>
+</div>
+<div id="outline-container-org5db958e" class="outline-4">
+<h4 id="org5db958e"><span class="section-number-4">5.3.2.</span> STEMM</h4>
+<div class="outline-text-4" id="text-5-3-2">
+</div>
+<ol class="org-ol">
+<li><a id="org9580e32"></a>CSE<br />
+<ol class="org-ol">
+<li><a id="orgefe9b8a"></a>AI<br />
+<div class="outline-text-6" id="text-5-3-2-1-1">
+<ul class="org-ul">
+<li>“AI for Learning,” Routledge &amp; CRC Press. Accessed: May 24, 2024. [Online]. Available: <a href="https://www.routledge.com/AI-for-Learning/Kent-duBoulay/p/book/9781032039213">https://www.routledge.com/AI-for-Learning/Kent-duBoulay/p/book/9781032039213</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="orgd2f9c0a"></a>Ecology<br />
+<div class="outline-text-5" id="text-5-3-2-2">
+<ul class="org-ul">
+<li>G. Davey, Ecological Learning Theory, 1st edition. Milton: Routledge, 2020.</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org7bc5ea6" class="outline-4">
+<h4 id="org7bc5ea6"><span class="section-number-4">5.3.3.</span> Core</h4>
+<div class="outline-text-4" id="text-5-3-3">
+</div>
+<ol class="org-ol">
+<li><a id="org45a1e0e"></a>Undergraduate Texts<br />
+<div class="outline-text-5" id="text-5-3-3-1">
+<ul class="org-ul">
+<li>M. H. Olson, <i>Introduction to Theories of Learning: Ninth Edition.</i> Psychology Press, 2015.</li>
+</ul>
+</div>
+</li>
+<li><a id="orge57e18e"></a>Misc<br />
+<div class="outline-text-5" id="text-5-3-3-2">
+<ul class="org-ul">
+<li>S. M. Kosslyn, “The best books on the science of learning,” Shepherd. <a href="https://shepherd.com/best-books/the-science-of-learning">https://shepherd.com/best-books/the-science-of-learning</a> (accessed Mar. 04, 2022).</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgd252bb4" class="outline-4">
+<h4 id="orgd252bb4"><span class="section-number-4">5.3.4.</span> Special Topics</h4>
+<div class="outline-text-4" id="text-5-3-4">
+</div>
+<ol class="org-ol">
+<li><a id="orgb861122"></a>Indology<br />
+<div class="outline-text-5" id="text-5-3-4-1">
+<ul class="org-ul">
+<li>R. Gurukkal, <i>History and Theory of Knowledge Production: An Introductory Outline.</i> Oxford University Press, 2018.</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgd2d62db" class="outline-4">
+<h4 id="orgd2d62db"><span class="section-number-4">5.3.5.</span> Misc</h4>
+<div class="outline-text-4" id="text-5-3-5">
+<ul class="org-ul">
+<li>S. E. Ainsworth, “Multi-Representational Learning,” Open Encyclopedia of Cognitive Science, Jul. 2024, doi: 10.21428/e2759450.5cc1206d.</li>
+
+<li>“Study: Optimal learning in noisy ecological niches | Santa Fe Institute.” Accessed: Dec. 05, 2024. [Online]. Available: <a href="https://www.santafe.edu/news-center/news/study-optimal-learning-in-noisy-ecological-niches">https://www.santafe.edu/news-center/news/study-optimal-learning-in-noisy-ecological-niches</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“What Aboriginal people know about the pathways of knowledge | Psyche Ideas,” Psyche. <a href="https://psyche.co/ideas/what-aboriginal-people-know-about-the-pathways-of-knowledge">https://psyche.co/ideas/what-aboriginal-people-know-about-the-pathways-of-knowledge</a> (accessed Dec. 02, 2020).</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“The ‘secret strategy’ that could boost your ability to learn | Psyche Ideas,” Psyche. Accessed: Nov. 13, 2024. [Online]. Available: <a href="https://psyche.co/ideas/the-secret-strategy-that-could-boost-your-ability-to-learn">https://psyche.co/ideas/the-secret-strategy-that-could-boost-your-ability-to-learn</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org9601c50" class="outline-3">
+<h3 id="org9601c50"><span class="section-number-3">5.4.</span> Memory</h3>
+<div class="outline-text-3" id="text-5-4">
+</div>
+<div id="outline-container-orgcf08ec1" class="outline-4">
+<h4 id="orgcf08ec1"><span class="section-number-4">5.4.1.</span> General</h4>
+</div>
+<div id="outline-container-org5cc5b64" class="outline-4">
+<h4 id="org5cc5b64"><span class="section-number-4">5.4.2.</span> Core</h4>
+<div class="outline-text-4" id="text-5-4-2">
+</div>
+<ol class="org-ol">
+<li><a id="org1b8edf8"></a>Practice<br />
+<div class="outline-text-5" id="text-5-4-2-1">
+<ul class="org-ul">
+<li>T. Alloway and R. Alloway, <i>The New IQ: Use Your Working Memory to Think Stronger, Smarter, Faster.</i> HarperCollins UK, 2013.</li>
+
+<li>S. Callery, <i>5-Minute Memory Workout (Collins Gem).</i> HarperCollins UK, 2012.</li>
+
+<li>J. B. Arden, <i>Improving Your Memory For Dummies.</i> John Wiley &amp; Sons, 2011.</li>
+</ul>
+</div>
+</li>
+<li><a id="org6af45c5"></a>Undergraduate Texts<br />
+<div class="outline-text-5" id="text-5-4-2-2">
+<ul class="org-ul">
+<li>M. B. Howes, Human Memory: Structures and Images. SAGE Publications, 2007.</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgb9d2c2e" class="outline-4">
+<h4 id="orgb9d2c2e"><span class="section-number-4">5.4.3.</span> Special Topics</h4>
+<div class="outline-text-4" id="text-5-4-3">
+</div>
+<ol class="org-ol">
+<li><a id="org6d215fc"></a>Popular Works<br />
+<div class="outline-text-5" id="text-5-4-3-1">
+<ul class="org-ul">
+<li>M. Byster, <i>The Power of Forgetting: Six Essential Skills to Clear Out Brain Clutter and Become the Sharpest, Smartest You.</i> Potter/Ten Speed/Harmony/Rodale, 2014.</li>
+
+<li>J. Foer, <i>Moonwalking with Einstein: The Art and Science of Remembering Everything.</i> Penguin Press, 2012.</li>
+
+<li>H. H. Wood and A. S. Byatt, <i>Memory: An Anthology.</i> Vintage Books, 2009.</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org19ad467" class="outline-4">
+<h4 id="org19ad467"><span class="section-number-4">5.4.4.</span> Misc</h4>
+<div class="outline-text-4" id="text-5-4-4">
+<ul class="org-ul">
+<li>“How to build a memory palace | Psyche Guides.” Accessed: Oct. 23, 2025. [Online]. Available: <a href="https://psyche.co/guides/how-to-build-a-memory-palace-to-store-and-revisit-information">https://psyche.co/guides/how-to-build-a-memory-palace-to-store-and-revisit-information</a></li>
+
+<li>“If memory is precious to you then go ahead and record everything! | Aeon Essays,” Aeon. Accessed: Sep. 26, 2025. [Online]. Available: <a href="https://aeon.co/essays/if-memory-is-precious-to-you-then-go-ahead-and-record-everything">https://aeon.co/essays/if-memory-is-precious-to-you-then-go-ahead-and-record-everything</a></li>
+
+<li>J. Sanduja, “Gender, Power, And The Archive: A Feminist Introduction To Memory Studies,” Feminism in India. Accessed: Jul. 18, 2025. [Online]. Available: <a href="https://feminisminindia.com/2025/07/18/gender-power-and-the-archive-a-feminist-introduction-to-memory-studies/">https://feminisminindia.com/2025/07/18/gender-power-and-the-archive-a-feminist-introduction-to-memory-studies/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“What can slime mould teach us about biological memory? | Aeon Essays,” Aeon. Accessed: Jul. 12, 2025. [Online]. Available: <a href="https://aeon.co/essays/what-can-slime-mould-teach-us-about-biological-memory">https://aeon.co/essays/what-can-slime-mould-teach-us-about-biological-memory</a></li>
+
+<li>“Memory gets a boost from positive emotion,” Nature, Jul. 2025, doi: 10.1038/d41586-025-02107-7.</li>
+
+<li>M. Schirber, “How We Remember Stories,” Physics, vol. 18, p. 117, Jun. 2025, doi: 10.1103/g1cz-wk1l.</li>
+<li>“IAS Scholars Discover a Universal Law of Memory - Ideas | Institute for Advanced Study.” Accessed: Jun. 18, 2025. [Online]. Available: <a href="https://www.ias.edu/ideas/ias-scholars-discover-universal-law-memory">https://www.ias.edu/ideas/ias-scholars-discover-universal-law-memory</a></li>
+</ul>
+
+
+
+
+
+
+
+<ul class="org-ul">
+<li>L. Kozachkov, J.-J. Slotine, and D. Krotov, “Neuron–astrocyte associative memory,” Proc. Natl. Acad. Sci. U.S.A., vol. 122, no. 21, p. e2417788122, May 2025, doi: 10.1073/pnas.2417788122.</li>
+
+<li>“Why our flawed, flexible memories come with social benefits | Psyche Ideas.” Accessed: May 23, 2025. [Online]. Available: <a href="https://psyche.co/ideas/why-our-flawed-flexible-memories-come-with-social-benefits">https://psyche.co/ideas/why-our-flawed-flexible-memories-come-with-social-benefits</a></li>
+
+<li>“Epigenetic Memory: Binary or Analog? | SIAM,” Society for Industrial and Applied Mathematics. Accessed: Apr. 24, 2025. [Online]. Available: <a href="https://www.siam.org/publications/siam-news/articles/epigenetic-memory-binary-or-analog/">https://www.siam.org/publications/siam-news/articles/epigenetic-memory-binary-or-analog/</a></li>
+
+<li>“With Searle Scholar award, Fan will study serotonin role in memory | Picower Institute.” Accessed: Apr. 23, 2025. [Online]. Available: <a href="https://picower.mit.edu/news/searle-scholar-award-fan-will-study-serotonin-role-memory">https://picower.mit.edu/news/searle-scholar-award-fan-will-study-serotonin-role-memory</a></li>
+
+<li>“How to get better at remembering | Psyche Guides,” Psyche. Accessed: Nov. 28, 2024. [Online]. Available: <a href="https://psyche.co/guides/how-to-get-better-at-remembering-names-and-shopping-lists">https://psyche.co/guides/how-to-get-better-at-remembering-names-and-shopping-lists</a></li>
+
+<li>N. Nozari and R. C. Martin, “Is working memory domain-general or domain-specific?,” Trends in Cognitive Sciences, Jul. 2024, doi: 10.1016/j.tics.2024.06.006.</li>
+
+<li>J. Gräff and S. Ramirez, Eds., Engrams: A Window into the Memory Trace, vol. 38. in Advances in Neurobiology, vol. 38. Cham: Springer International Publishing, 2024. doi: 10.1007/978-3-031-62983-9.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>T. M. P. Reader, “How Actors Remember Their Lines,” The MIT Press Reader. Accessed: May 22, 2024. [Online]. Available: <a href="https://thereader.mitpress.mit.edu/how-actors-remember-their-lines/">https://thereader.mitpress.mit.edu/how-actors-remember-their-lines/</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org74241e7" class="outline-3">
+<h3 id="org74241e7"><span class="section-number-3">5.5.</span> Attention</h3>
+<div class="outline-text-3" id="text-5-5">
+</div>
+<div id="outline-container-orge7413b2" class="outline-4">
+<h4 id="orge7413b2"><span class="section-number-4">5.5.1.</span> General</h4>
+</div>
+<div id="outline-container-org158f074" class="outline-4">
+<h4 id="org158f074"><span class="section-number-4">5.5.2.</span> Special Topics</h4>
+<div class="outline-text-4" id="text-5-5-2">
+</div>
+<ol class="org-ol">
+<li><a id="orgc7c0d13"></a>Popular Resources<br />
+<div class="outline-text-5" id="text-5-5-2-1">
+<ul class="org-ul">
+<li>J. Hari, Stolen Focus: Why You Can’t Pay Attention&#x2013;And How to Think Deeply Again. Crown Publishing Group, 2022.
+<ul class="org-ul">
+<li>J. Hari, “Your attention didn’t collapse. It was stolen,” The Observer, Jan. 02, 2022. Accessed: Jan. 04, 2022. [Online]. Available: <a href="https://www.theguardian.com/science/2022/jan/02/attention-span-focus-screens-apps-smartphones-social-media">https://www.theguardian.com/science/2022/jan/02/attention-span-focus-screens-apps-smartphones-social-media</a></li>
+</ul></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgc3dbb97" class="outline-4">
+<h4 id="orgc3dbb97"><span class="section-number-4">5.5.3.</span> Misc</h4>
+</div>
+</div>
+<div id="outline-container-org489e674" class="outline-3">
+<h3 id="org489e674"><span class="section-number-3">5.6.</span> Perception</h3>
+<div class="outline-text-3" id="text-5-6">
+</div>
+<div id="outline-container-org1180b54" class="outline-4">
+<h4 id="org1180b54"><span class="section-number-4">5.6.1.</span> General</h4>
+<div class="outline-text-4" id="text-5-6-1">
+</div>
+<ol class="org-ol">
+<li><a id="org3fc77cd"></a>Very Short Introductions<br />
+<div class="outline-text-5" id="text-5-6-1-1">
+<ul class="org-ul">
+<li>B. Rogers, Perception: A Very Short Introduction, Illustrated edition. Oxford, United Kingdom: OUP Oxford, 2017.</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org847e64c" class="outline-4">
+<h4 id="org847e64c"><span class="section-number-4">5.6.2.</span> Philosophy</h4>
+<div class="outline-text-4" id="text-5-6-2">
+</div>
+<ol class="org-ol">
+<li><a id="org61344e9"></a>Phenomenology<br />
+<div class="outline-text-5" id="text-5-6-2-1">
+<ul class="org-ul">
+<li>M. Merleau-Ponty, Phenomenology of Perception, 1st edition. London New York: Routledge, 2013.</li>
+</ul>
+</div>
+</li>
+<li><a id="org5b174b7"></a>Wittgenstein<br />
+<div class="outline-text-5" id="text-5-6-2-2">
+<ul class="org-ul">
+<li>M. Hymers, Wittgenstein on Sensation and Perception, 1st edition. Routledge, 2017.</li>
+</ul>
+</div>
+</li>
+<li><a id="org0a362aa"></a>History<br />
+<div class="outline-text-5" id="text-5-6-2-3">
+<ul class="org-ul">
+<li>D. W. Hamlyn, Sensation and Perception: A History of the Philosophy of Perception, 1st edition. Routledge, 2022.</li>
+</ul>
+</div>
+</li>
+<li><a id="org55d45b6"></a>India<br />
+<div class="outline-text-5" id="text-5-6-2-4">
+<ul class="org-ul">
+<li>B. K. Matilal, Perception: an Essay on Classical Indian Theories of Knowledge. Motilal Banarsidass Publications, 2003.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgfb6d86c"></a>Misc<br /></li>
+</ol>
+</div>
+<div id="outline-container-org92d9e8a" class="outline-4">
+<h4 id="org92d9e8a"><span class="section-number-4">5.6.3.</span> STEMM</h4>
+<div class="outline-text-4" id="text-5-6-3">
+</div>
+<ol class="org-ol">
+<li><a id="org1a16b58"></a>Evolution<br />
+<div class="outline-text-5" id="text-5-6-3-1">
+<ul class="org-ul">
+<li>J. Zanker, Sensation, Perception and Action: An Evolutionary Perspective, 2010th edition. Basingstoke: Palgrave Macmillan, 2010.</li>
+</ul>
+</div>
+</li>
+<li><a id="org4cb1c12"></a>Misc<br /></li>
+</ol>
+</div>
+<div id="outline-container-org6608610" class="outline-4">
+<h4 id="org6608610"><span class="section-number-4">5.6.4.</span> Worldly Matters</h4>
+<div class="outline-text-4" id="text-5-6-4">
+</div>
+<ol class="org-ol">
+<li><a id="orgb16ed94"></a>Misc<br /></li>
+</ol>
+</div>
+<div id="outline-container-org6e2bb1d" class="outline-4">
+<h4 id="org6e2bb1d"><span class="section-number-4">5.6.5.</span> Core</h4>
+<div class="outline-text-4" id="text-5-6-5">
+</div>
+<ol class="org-ol">
+<li><a id="org5210df5"></a>Education<br />
+<ol class="org-ol">
+<li><a id="org3479d0b"></a>Courses<br />
+<div class="outline-text-6" id="text-5-6-5-1-1">
+<ul class="org-ul">
+<li>“Sensation And Perception | Brain and Cognitive Sciences,” MIT OpenCourseWare. Accessed: Jun. 17, 2025. [Online]. Available: <a href="https://ocw.mit.edu/courses/9-35-sensation-and-perception-spring-2009/">https://ocw.mit.edu/courses/9-35-sensation-and-perception-spring-2009/</a>
+<ul class="org-ul">
+<li>J. M. Wolfe et al., Sensation and Perception, 7th ed. edition. New York, NY, United States of America: Sinauer Associates Is an Imprint of Oxford University Press, 2024.</li>
+</ul></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="orgcc9c2ae"></a>Texts<br />
+<div class="outline-text-5" id="text-5-6-5-2">
+<ul class="org-ul">
+<li>J. M. Wolfe et al., Sensation and Perception, 7th ed. edition. New York, NY, United States of America: Sinauer Associates Is an Imprint of Oxford University Press, 2024.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>B. L. Schwartz and J. H. Krantz, Sensation and Perception, Third edition. SAGE Publications, Inc, 2023.</li>
+<li>J. Smith and J. Harris, SENSATION AND PERCEPTION, Second edition. London ; Thousand Oaks, California: SAGE Publications Ltd, 2022.</li>
+<li>G. Mather, Foundations of Sensation and Perception, 4th edition. London New York: Taylor &amp; Francis Ltd, 2022.</li>
+<li>D. Merfeld et al., Sensation and Perception, 6th edition. New York Oxford: Oxford University Press Inc, 2021.</li>
+<li>H. J. Foley and M. Bates, Sensation and Perception, 6th edition. London New York: Routledge, 2019.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>H. R. Schiffman, Sensation and Perception: An Integrated Approach, 5th edition. New York: John Wiley &amp; Sons, 2000.</li>
+<li>M. W. Levine, Fundamentals of Sensation and Perception, 3rd edition. Oxford: OUP Oxford, 2000.</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orge894647" class="outline-4">
+<h4 id="orge894647"><span class="section-number-4">5.6.6.</span> Arts</h4>
+<div class="outline-text-4" id="text-5-6-6">
+</div>
+<ol class="org-ol">
+<li><a id="org7f973d4"></a>Misc<br />
+<div class="outline-text-5" id="text-5-6-6-1">
+<ul class="org-ul">
+<li>A. Huxley and J. G. Ballard, Doors Of Perception, The. London: RHUK, 2004.</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgb554764" class="outline-4">
+<h4 id="orgb554764"><span class="section-number-4">5.6.7.</span> Special Topics</h4>
+</div>
+<div id="outline-container-org520f77f" class="outline-4">
+<h4 id="org520f77f"><span class="section-number-4">5.6.8.</span> Misc</h4>
+<div class="outline-text-4" id="text-5-6-8">
+<ul class="org-ul">
+<li>K. Dickinson, “Why you should always question your perceptions,” Big Think. Accessed: Aug. 21, 2025. [Online]. Available: <a href="https://bigthink.com/the-learning-curve/question-your-perceptions/">https://bigthink.com/the-learning-curve/question-your-perceptions/</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org66841cc" class="outline-3">
+<h3 id="org66841cc"><span class="section-number-3">5.7.</span> Practice</h3>
+<div class="outline-text-3" id="text-5-7">
+<ul class="org-ul">
+<li>A. D. Bragdon And D. Gamon, <i>Building Left-Brain Power: Conditioning Exercises And Tips For Left Brain Skills.</i> Walker, 2003.</li>
+
+<li>B. C. Ph.D M. D. And M. Noir, <i>Dental Floss For The Mind: A Complete Program For Boosting Your Brain Power.</i> Mcgraw-Hill Education, 2005.</li>
+
+<li>T. Peake And T. E. S. Agency, <i>The Astronaut Selection Test Book: Do You Have What It Takes For Space?</i> Cornerstone, 2020.</li>
+
+<li>K. Smith, <i>Imaginary World Of.</i> Simon &amp; Schuster, 2015.</li>
+<li>K. Smith, <i>Mess: The Manual Of Accidents And Mistakes.</i> Penguin Publishing Group, 2010.</li>
+<li>K. Smith, <i>How To Be An Explorer Of The World: Portable Life Museum.</i> Penguin Books, 2011.</li>
+
+<li>A. Selsberg, <i>The Jottery: Thought Experiments For Everyday Philosophers And Part-Time Geniuses.</i> Penguin, 2015.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgaf4f318" class="outline-2">
+<h2 id="orgaf4f318"><span class="section-number-2">6.</span> Special Topics</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+<div id="outline-container-org5aa2e39" class="outline-3">
+<h3 id="org5aa2e39"><span class="section-number-3">6.1.</span> Bono</h3>
+<div class="outline-text-3" id="text-6-1">
+<ul class="org-ul">
+<li>E. D. Bono, <i>I Am Right, You Are Wrong.</i> Penguin UK, 2017.</li>
+
+<li>E. D. Bono, <i>Lateral Thinking: An Introduction.</i> Random House, 2014.</li>
+
+<li>E. D. Bono, <i>Simplicity.</i> Penguin UK, 2017.</li>
+
+<li>E. D. Bono, <i>Six Thinking Hats</i>. Penguin UK, 2017.</li>
+
+<li>E. D. Bono, <i>The Importance of Possibility.</i> Blackhall Publishing, 2007.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org8fdd1d3" class="outline-3">
+<h3 id="org8fdd1d3"><span class="section-number-3">6.2.</span> Genius</h3>
+<div class="outline-text-3" id="text-6-2">
+</div>
+<div id="outline-container-org92be897" class="outline-4">
+<h4 id="org92be897"><span class="section-number-4">6.2.1.</span> General</h4>
+<div class="outline-text-4" id="text-6-2-1">
+</div>
+<ol class="org-ol">
+<li><a id="orga1ab842"></a>Very Short Introductions<br />
+<div class="outline-text-5" id="text-6-2-1-1">
+<ul class="org-ul">
+<li>A. Robinson, <i>Genius: A Very Short Introduction.</i> OUP Oxford, 2011.</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org529071b" class="outline-4">
+<h4 id="org529071b"><span class="section-number-4">6.2.2.</span> STEMM</h4>
+<div class="outline-text-4" id="text-6-2-2">
+</div>
+<ol class="org-ol">
+<li><a id="org923de09"></a>Misc<br /></li>
+</ol>
+</div>
+<div id="outline-container-orgca79dfa" class="outline-4">
+<h4 id="orgca79dfa"><span class="section-number-4">6.2.3.</span> World</h4>
+<div class="outline-text-4" id="text-6-2-3">
+</div>
+<ol class="org-ol">
+<li><a id="orga813c02"></a>Misc<br /></li>
+</ol>
+</div>
+<div id="outline-container-org11874b0" class="outline-4">
+<h4 id="org11874b0"><span class="section-number-4">6.2.4.</span> Arts</h4>
+<div class="outline-text-4" id="text-6-2-4">
+</div>
+<ol class="org-ol">
+<li><a id="org147aadf"></a>Misc<br /></li>
+</ol>
+</div>
+<div id="outline-container-org61a1f28" class="outline-4">
+<h4 id="org61a1f28"><span class="section-number-4">6.2.5.</span> Misc</h4>
+<div class="outline-text-4" id="text-6-2-5">
+<ul class="org-ul">
+<li>N. Warburton, “Everyday Philosophy: The myth of the lone genius,” The New European. Accessed: Apr. 10, 2025. [Online]. Available: <a href="https://www.theneweuropean.co.uk/nigel-warburton-everyday-philosophy-group-genius/">https://www.theneweuropean.co.uk/nigel-warburton-everyday-philosophy-group-genius/</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgd8eb29f" class="outline-3">
+<h3 id="orgd8eb29f"><span class="section-number-3">6.3.</span> OECS</h3>
+<div class="outline-text-3" id="text-6-3">
+<ul class="org-ul">
+<li>“Open Encylopedia of Cognitive Science,” Open Encylopedia of Cognitive Science, Accessed: Jul. 25, 2024. [Online]. Available: <a href="https://oecs.mit.edu/">https://oecs.mit.edu/</a></li>
+
+<li>C. F. Craver, “Mechanistic Explanation,” Open Encyclopedia of Cognitive Science, Jul. 2024, doi: 10.21428/e2759450.98d525c7.</li>
+<li>J. Jetten, “Social Identity,” Open Encyclopedia of Cognitive Science, Jul. 2024, doi: 10.21428/e2759450.d85def4e.</li>
+<li>R. M. Nefdt and C. Potts, “Compositionality,” Open Encyclopedia of Cognitive Science, Jul. 2024, doi: 10.21428/e2759450.494deacd.</li>
+<li>A. G. Collins, “Reinforcement Learning,” Open Encyclopedia of Cognitive Science, Jul. 2024, doi: 10.21428/e2759450.36d1ca92.</li>
+<li>K. H. Kendrick and J. Holler, “Conversation,” Open Encyclopedia of Cognitive Science, Jul. 2024, doi: 10.21428/e2759450.3c00b537.</li>
+<li>M. A. Khalidi, “Natural Kinds,” Open Encyclopedia of Cognitive Science, Jul. 2024, doi: 10.21428/e2759450.2ac71673.</li>
+<li>T. W. Polger, “Multiple Realizability,” Open Encyclopedia of Cognitive Science, Jul. 2024, doi: 10.21428/e2759450.0582140e.</li>
+<li>C. Heyes, “Imitation,” Open Encyclopedia of Cognitive Science, Jul. 2024, doi: 10.21428/e2759450.0f654e1a.</li>
+<li>D. M. Amodio, “Intergroup Neuroscience,” Open Encyclopedia of Cognitive Science, Jul. 2024, doi: 10.21428/e2759450.6673bc2b.</li>
+<li>M. V. Peelen, “Visual Cognitive Neuroscience,” Open Encyclopedia of Cognitive Science, Jul. 2024, doi: 10.21428/e2759450.d3438ecd.</li>
+<li>M. Arcangeli, “Mental Imagery,” Open Encyclopedia of Cognitive Science, Jul. 2024, doi: 10.21428/e2759450.7f02300c.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org5dde14e" class="outline-3">
+<h3 id="org5dde14e"><span class="section-number-3">6.4.</span> Popular Resources</h3>
+<div class="outline-text-3" id="text-6-4">
+<ul class="org-ul">
+<li>S. Gershman, What Makes Us Smart: The Computational Logic of Human Cognition. Princeton University Press, 2021.</li>
+
+<li>M. Tomasello, <b>A Natural History of Human Thinking.</b> Harvard University Press, 2018.</li>
+
+<li>H. Mercier and D. Sperber, <b>The Enigma of Reason.</b> Harvard University Press, 2017.</li>
+
+<li>H. Gardner, <i>Frames of Mind: The Theory of Multiple Intelligences.</i> Hachette UK, 2011.</li>
+
+<li>J. Brockman, <i>This Will Make You Smarter.</i> Random House, 2012.</li>
+
+<li>K. Schulz, <i>Being Wrong: Adventures In The Margin Of Error.</i> Granta Books, 2011.</li>
+
+<li>S. M. Kosslyn And G. W. Miller, <b>Top Brain, Bottom Brain: Harnessing The Power Of The Four Cognitive Modes.</b> Simon And Schuster, 2015.</li>
+<li>G. Weinberg And L. Mccann, <b>Super Thinking: The Big Book Of Mental Models.</b> Portfolio/Penguin, 2019.</li>
+<li>D. D. Cummins, <i>Good Thinking: Seven Powerful Ideas That Influence The Way We Think.</i> Cambridge University Press, 2012.</li>
+<li>L. Mlodinow, <b>Elastic: Flexible Thinking In A Constantly Changing World.</b> Penguin Uk, 2018.</li>
+<li>B. Hood, <b>The Domesticated Brain: A Pelican Introduction.</b> Penguin Uk, 2014.</li>
+
+<li>M. Csikszentmihalyi, <b>Flow: The Psychology of Optimal Experience.</b> Harper Collins, 2009.</li>
+
+<li>R. Dobelli, <b>The Art of Thinking Clearly.</b> Hodder &amp; Stoughton, 2014.</li>
+
+<li>S. D. Levitt and S. J. Dubner, <i>Think Like a Freak: Secrets of the Rogue Economist</i>. Penguin UK, 2014.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgedb109d" class="outline-2">
+<h2 id="orgedb109d"><span class="section-number-2">7.</span> Miscellaneous</h2>
+<div class="outline-text-2" id="text-7">
+</div>
+<div id="outline-container-orge5a9806" class="outline-3">
+<h3 id="orge5a9806"><span class="section-number-3">7.1.</span> Misc</h3>
+<div class="outline-text-3" id="text-7-1">
+<ul class="org-ul">
+<li>“Studying Wikipedia browsing habits to learn how people learn | Penn Today.” Accessed: Feb. 04, 2026. [Online]. Available: <a href="https://penntoday.upenn.edu/news/studying-wikipedia-browsing-habits-learn-how-people-learn">https://penntoday.upenn.edu/news/studying-wikipedia-browsing-habits-learn-how-people-learn</a></li>
+
+<li>“Measuring Chaos: Using Machine Learning to Satisfy Our Need to Know – Penn Bioengineering Blog.” Accessed: Feb. 04, 2026. [Online]. Available: <a href="https://beblog.seas.upenn.edu/measuring-chaos-using-machine-learning-to-satisfy-our-need-to-know/">https://beblog.seas.upenn.edu/measuring-chaos-using-machine-learning-to-satisfy-our-need-to-know/</a></li>
+
+<li>“At MIT, a continued commitment to understanding intelligence,” MIT News | Massachusetts Institute of Technology. Accessed: Jan. 15, 2026. [Online]. Available: <a href="https://news.mit.edu/2026/continued-commitment-to-understanding-intelligence-0114">https://news.mit.edu/2026/continued-commitment-to-understanding-intelligence-0114</a></li>
+
+<li>“Two Concepts of Intelligence – Communications of the ACM.” Accessed: Jan. 13, 2026. [Online]. Available: <a href="https://cacm.acm.org/blogcacm/two-concepts-of-intelligence/">https://cacm.acm.org/blogcacm/two-concepts-of-intelligence/</a></li>
+
+<li>R. P. Cooper and D. Peebles, “Levels of Analysis,” Open Encyclopedia of Cognitive Science, Jul. 2024, Accessed: Jan. 05, 2026. [Online]. Available: <a href="https://oecs.mit.edu/pub/ztivn7hx/release/1">https://oecs.mit.edu/pub/ztivn7hx/release/1</a></li>
+
+<li>C. Spence, “Taste,” Open Encyclopedia of Cognitive Science, Jul. 2024, doi: 10.21428/e2759450.704d8d25.</li>
+<li>H. H. Clark, “Common Ground,” Open Encyclopedia of Cognitive Science, Jul. 2024, doi: 10.21428/e2759450.671362c9.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Understanding the nuances of human-like intelligence,” MIT News | Massachusetts Institute of Technology. Accessed: Nov. 16, 2025. [Online]. Available: <a href="https://news.mit.edu/2025/understanding-nuances-human-intelligence-phillip-isola-1111">https://news.mit.edu/2025/understanding-nuances-human-intelligence-phillip-isola-1111</a></li>
+
+<li>J. Schwarz, O. of E. C. on Oct. 3, 2025, and 3:44 P.m, “In the hallways of Princeton, a fascination with the human mind unlocked the power of deep learning.” Accessed: Oct. 30, 2025. [Online]. Available: <a href="https://www.princeton.edu/news/2025/10/03/hallways-princeton-fascination-human-mind-unlocked-power-deep-learning">https://www.princeton.edu/news/2025/10/03/hallways-princeton-fascination-human-mind-unlocked-power-deep-learning</a></li>
+
+<li>E. Murphy, “ROSE: A Universal Neural Grammar,” Cognitive Neuroscience, vol. 0, no. 0, pp. 1–32, doi: 10.1080/17588928.2025.2523875.</li>
+
+<li>A. Gefter, “What Is Intelligence?,” Nautilus. Accessed: Oct. 27, 2025. [Online]. Available: <a href="https://nautil.us/what-is-intelligence-1242863/">https://nautil.us/what-is-intelligence-1242863/</a></li>
+
+<li>G. Baggio, “Meaning,” Open Encyclopedia of Cognitive Science, Jul. 2024, doi: 10.21428/e2759450.6609ecb6.</li>
+
+<li>“How the brain splits up vision without you even noticing | Picower Institute.” Accessed: Sep. 23, 2025. [Online]. Available: <a href="https://picower.mit.edu/news/how-brain-splits-vision-without-you-even-noticing">https://picower.mit.edu/news/how-brain-splits-vision-without-you-even-noticing</a></li>
+
+<li>L. A. Weber, D. M. Yee, D. M. Small, and F. H. Petzschner, “The interoceptive origin of reinforcement learning,” Trends in Cognitive Sciences, vol. 29, no. 9, pp. 840–854, Sep. 2025, doi: 10.1016/j.tics.2025.05.008.</li>
+
+<li>T. M. P. Reader, “When Your Father Is a Magician, What Do You Believe?,” The MIT Press Reader. Accessed: Aug. 30, 2025. [Online]. Available: <a href="https://thereader.mitpress.mit.edu/when-your-father-is-a-magician-what-do-you-believe/">https://thereader.mitpress.mit.edu/when-your-father-is-a-magician-what-do-you-believe/</a></li>
+
+<li>M. Prinzing and M. Vazquez, “Studying philosophy does make people better thinkers, according to new research on more than 600,000 college grads,” The Conversation. Accessed: Aug. 30, 2025. [Online]. Available: <a href="http://theconversation.com/studying-philosophy-does-make-people-better-thinkers-according-to-new-research-on-more-than-600-000-college-grads-262681">http://theconversation.com/studying-philosophy-does-make-people-better-thinkers-according-to-new-research-on-more-than-600-000-college-grads-262681</a></li>
+
+<li>J. W. Kable, “Neuroeconomics,” Open Encyclopedia of Cognitive Science, Jul. 2024, doi: 10.21428/e2759450.25dc99f6.</li>
+
+<li>K. P. Harden, “Intelligence,” Open Encyclopedia of Cognitive Science, Jul. 2024, doi: 10.21428/e2759450.2aa90758.</li>
+
+<li>S. C. Levinson, “The Interaction Engine,” Open Encyclopedia of Cognitive Science, Jul. 2024, doi: 10.21428/e2759450.e3df24b2.</li>
+</ul>
+
+
+
+
+
+<ul class="org-ul">
+<li>J. Thomson, “The Nexus Method: How to make the most of what you learn,” Big Think. Accessed: Aug. 15, 2025. [Online]. Available: <a href="https://bigthink.com/mini-philosophy/the-nexus-method-how-to-make-the-most-of-what-you-learn/">https://bigthink.com/mini-philosophy/the-nexus-method-how-to-make-the-most-of-what-you-learn/</a></li>
+
+<li>J. Bryson, “Margaret Boden obituary: cognitive scientist who explored how machines might emulate human imagination,” Nature, vol. 644, no. 8077, pp. 603–603, Aug. 2025, doi: 10.1038/d41586-025-02548-0.</li>
+
+<li>“The (surprisingly new) science of aphantasia – the inability to ‘see’ mental imagery | Psyche Videos.” Accessed: Aug. 15, 2025. [Online]. Available: <a href="https://psyche.co/videos/the-surprisingly-new-science-of-aphantasia-the-inability-to-see-mental-imagery">https://psyche.co/videos/the-surprisingly-new-science-of-aphantasia-the-inability-to-see-mental-imagery</a></li>
+
+<li>T. M. P. Reader, “Why Human Irrationality Is Evolutionary, Not Accidental,” The MIT Press Reader. Accessed: Aug. 13, 2025. [Online]. Available: <a href="https://thereader.mitpress.mit.edu/why-human-irrationality-is-evolutionary-not-accidental/">https://thereader.mitpress.mit.edu/why-human-irrationality-is-evolutionary-not-accidental/</a></li>
+
+<li>“Pluralistic: How twiddling enshittifies your brain (28 Jul 2025) – Pluralistic: Daily links from Cory Doctorow.” Accessed: Jul. 29, 2025. [Online]. Available: <a href="https://pluralistic.net/2025/07/28/twiddlehazard/">https://pluralistic.net/2025/07/28/twiddlehazard/</a></li>
+
+<li>M. I. T. News, “How the brain distinguishes between ambiguous hypotheses,” MIT McGovern Institute. Accessed: Jun. 11, 2025. [Online]. Available: <a href="https://mcgovern.mit.edu/2025/06/06/how-the-brain-distinguishes-between-ambiguous-hypotheses/">https://mcgovern.mit.edu/2025/06/06/how-the-brain-distinguishes-between-ambiguous-hypotheses/</a></li>
+
+<li>D. M. Sidhu, “Iconicity,” Open Encyclopedia of Cognitive Science, Jul. 2024, doi: 10.21428/e2759450.515b2685.</li>
+
+<li>M. Auvray, “Sensory Substitution,” Open Encyclopedia of Cognitive Science, Jul. 2024, doi: 10.21428/e2759450.31252f1b.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>S. Tafazoli, A. Ardalan, and T. J. Buschman, “Cognitive neuroscience: How the brain navigates abstract task spaces,” Current Biology, vol. 35, no. 2, pp. R60–R62, Jan. 2025, doi: 10.1016/j.cub.2024.12.004.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“People who can’t picture images in their ‘mind’s eye’ still represent them in their brains.” Accessed: Jan. 11, 2025. [Online]. Available: <a href="https://www.science.org/content/article/people-who-can-t-picture-images-their-mind-s-eye-still-represent-them-their-brains">https://www.science.org/content/article/people-who-can-t-picture-images-their-mind-s-eye-still-represent-them-their-brains</a></li>
+
+<li>“Science of Learning and Memory.” Accessed: Jan. 03, 2025. [Online]. Available: <a href="http://localhost/courses/course-v1:MITxT+9.00.1x/">http://localhost/courses/course-v1:MITxT+9.00.1x/</a></li>
+
+<li>W. I. of Science, “Ants prove superior to humans in group problem-solving maze experiment.” Accessed: Dec. 24, 2024. [Online]. Available: <a href="https://phys.org/news/2024-12-ants-superior-humans-group-problem.html">https://phys.org/news/2024-12-ants-superior-humans-group-problem.html</a></li>
+
+<li>A. A. Novokhatko, A Guide to Classics and Cognitive Studies: Reviewing findings and results. De Gruyter, 2024. doi: 10.1515/9783111577371.</li>
+
+<li>B. Sawyers, “Cognitive Science and Classical Studies: The Chance for a Constructive Dialogue,” De Gruyter Conversations. Accessed: Dec. 08, 2024. [Online]. Available: <a href="https://blog.degruyter.com/cognitive-science-and-classical-studies-the-chance-for-a-constructive-dialogue/">https://blog.degruyter.com/cognitive-science-and-classical-studies-the-chance-for-a-constructive-dialogue/</a></li>
+
+<li>“Does language mirror the mind? An intellectual history | Aeon Essays,” Aeon. Accessed: Aug. 26, 2024. [Online]. Available: <a href="https://aeon.co/essays/does-language-mirror-the-mind-an-intellectual-history">https://aeon.co/essays/does-language-mirror-the-mind-an-intellectual-history</a></li>
+
+<li>“Can we see past our soul-blindness to recognise plant minds? | Aeon Essays,” Aeon. Accessed: Jun. 12, 2024. [Online]. Available: <a href="https://aeon.co/essays/can-we-see-past-our-soul-blindness-to-recognise-plant-minds">https://aeon.co/essays/can-we-see-past-our-soul-blindness-to-recognise-plant-minds</a></li>
+
+<li>T. M. P. Reader, “The Cognitive Magic of ‘Hi,’” The MIT Press Reader. Accessed: Jun. 04, 2024. [Online]. Available: <a href="https://thereader.mitpress.mit.edu/the-cognitive-magic-of-hi/">https://thereader.mitpress.mit.edu/the-cognitive-magic-of-hi/</a></li>
+
+<li>A. Ciaunica, J. Charlton, and H. Farmer, “When the Window Cracks: Transparency and the Fractured Self in Depersonalisation,” Phenom Cogn Sci, vol. 20, no. 1, pp. 1–19, Feb. 2021, doi: 10.1007/s11097-020-09677-z.</li>
+
+<li>“New brain-like transistor mimics human intelligence.” Accessed: Dec. 25, 2023. [Online]. Available: <a href="https://news.northwestern.edu/stories/2023/12/new-brain-like-transistor-mimics-human-intelligence/">https://news.northwestern.edu/stories/2023/12/new-brain-like-transistor-mimics-human-intelligence/</a></li>
+
+<li>“Perspective | When do we ‘click’ with someone? This test tells us.,” Washington Post. Accessed: Jan. 27, 2022. [Online]. Available: <a href="https://www.washingtonpost.com/outlook/2022/01/26/when-do-we-click-with-someone-this-test-tells-us/">https://www.washingtonpost.com/outlook/2022/01/26/when-do-we-click-with-someone-this-test-tells-us/</a></li>
+
+<li>S. DeDeo, <i>“Using big data to track major shifts in human cognition,”</i> PNAS, vol. 119, no. 4, Jan. 2022, doi: 10.1073/pnas.2121300119.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga4b9d24" class="outline-3">
+<h3 id="orga4b9d24"><span class="section-number-3">7.2.</span> oecs</h3>
+<div class="outline-text-3" id="text-7-2">
+<ul class="org-ul">
+<li>T. Ullman, “Intuitive Physics,” Open Encyclopedia of Cognitive Science, Jul. 2024, doi: 10.21428/e2759450.3f7da5ce.</li>
+<li>H. C. Barrett, “Morality,” Open Encyclopedia of Cognitive Science, Jul. 2024, doi: 10.21428/e2759450.74a15520.</li>
+<li>I. Krajbich, “The Drift Diffusion Model,” Open Encyclopedia of Cognitive Science, Jul. 2024, doi: 10.21428/e2759450.f40b8e0e.</li>
+
+<li>“Thematic Collections · Open Encyclopedia of Cognitive Science,” Open Encyclopedia of Cognitive Science, Accessed: Jul. 02, 2026. [Online]. Available: <a href="https://oecs.mit.edu/themes">https://oecs.mit.edu/themes</a></li>
+<li>“Technology,” Open Encyclopedia of Cognitive Science. Accessed: Jul. 02, 2026. [Online]. Available: <a href="https://oecs.mit.edu/technology">https://oecs.mit.edu/technology</a></li>
+<li>“Social Cognition,” Open Encyclopedia of Cognitive Science. Accessed: Jul. 02, 2026. [Online]. Available: <a href="https://oecs.mit.edu/social-cognition">https://oecs.mit.edu/social-cognition</a></li>
+<li>“Philosophical Foundations,” Open Encyclopedia of Cognitive Science. Accessed: Jul. 02, 2026. [Online]. Available: <a href="https://oecs.mit.edu/philosophical-foundations">https://oecs.mit.edu/philosophical-foundations</a></li>
+<li>“Perception,” Open Encyclopedia of Cognitive Science. Accessed: Jul. 02, 2026. [Online]. Available: <a href="https://oecs.mit.edu/perception">https://oecs.mit.edu/perception</a></li>
+<li>“Methods,” Open Encyclopedia of Cognitive Science. Accessed: Jul. 02, 2026. [Online]. Available: <a href="https://oecs.mit.edu/methods">https://oecs.mit.edu/methods</a></li>
+<li>“Learning,” Open Encyclopedia of Cognitive Science. Accessed: Jul. 02, 2026. [Online]. Available: <a href="https://oecs.mit.edu/learning">https://oecs.mit.edu/learning</a></li>
+<li>“Emotion,” Open Encyclopedia of Cognitive Science. Accessed: Jul. 02, 2026. [Online]. Available: <a href="https://oecs.mit.edu/emotion">https://oecs.mit.edu/emotion</a></li>
+<li>“Neuroscience,” Open Encyclopedia of Cognitive Science. Accessed: Jul. 02, 2026. [Online]. Available: <a href="https://oecs.mit.edu/neuroscience">https://oecs.mit.edu/neuroscience</a></li>
+<li>“Development,” Open Encyclopedia of Cognitive Science. Accessed: Jul. 02, 2026. [Online]. Available: <a href="https://oecs.mit.edu/development">https://oecs.mit.edu/development</a></li>
+<li>“Culture &amp; Evolution,” Open Encyclopedia of Cognitive Science. Accessed: Jul. 02, 2026. [Online]. Available: <a href="https://oecs.mit.edu/culture-and-evolution">https://oecs.mit.edu/culture-and-evolution</a></li>
+<li>G. Boleda, “Distributional Semantics,” Open Encyclopedia of Cognitive Science, Jul. 2024, doi: 10.21428/e2759450.50749b98.</li>
+<li>A. E. Goldberg, “Language,” Open Encyclopedia of Cognitive Science. Accessed: Jul. 02, 2026. [Online]. Available: <a href="https://oecs.mit.edu/language">https://oecs.mit.edu/language</a></li>
+<li>A. Dahl and M. Srinivasan, “Moral Development,” Open Encyclopedia of Cognitive Science, Jul. 2024, doi: 10.21428/e2759450.be02a602.</li>
+<li>C. Sergent and F. de Vignemont, “Consciousness,” Open Encyclopedia of Cognitive Science. Accessed: Jul. 02, 2026. [Online]. Available: <a href="https://oecs.mit.edu/consciousness">https://oecs.mit.edu/consciousness</a></li>
+<li>“Cognition,” Open Encyclopedia of Cognitive Science. Accessed: Jul. 02, 2026. [Online]. Available: <a href="https://oecs.mit.edu/cognition">https://oecs.mit.edu/cognition</a></li>
+<li>F. Ferreira, “Prosody,” Open Encyclopedia of Cognitive Science, Jul. 2024, doi: 10.21428/e2759450.a4045755.</li>
+<li>C. Fernyhough, “Inner Speech,” Open Encyclopedia of Cognitive Science, Jul. 2024, doi: 10.21428/e2759450.48614063.</li>
+<li>A. Kind, “Qualia,” Open Encyclopedia of Cognitive Science, Jul. 2024, doi: 10.21428/e2759450.6b5e3cdf.</li>
+<li>M. J. Crockett, “Transformative Experience,” Open Encyclopedia of Cognitive Science, Jul. 2024, doi: 10.21428/e2759450.8f8f9a82.</li>
+<li>M. A. Schmuckler, “Ecological Validity,” Open Encyclopedia of Cognitive Science, Jul. 2024, doi: 10.21428/e2759450.56b7211b.</li>
+<li>R. Samuels, “Modularity,” Open Encyclopedia of Cognitive Science, Jul. 2024, doi: 10.21428/e2759450.afbd5860.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>M. T. Turvey, Lectures on Perception: An Ecological Perspective, 1st edition. New York (N.Y.): Routledge, 2018.</li>
+</ul>
+
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-media.html">Media</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://ourghostorg.github.io/">OurGhostOrg</a></p>
+<p class="date">Created: 2026-07-06 Mon 18:35</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

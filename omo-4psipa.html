@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-07-06 Mon 18:35 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>PsychoAnalysis</title>
+<meta name="author" content="Staff Member(s), [[https://ourghostorg.github.io/][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">PsychoAnalysis</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgcfb6fc2">1. General</a></li>
+<li><a href="#orgee2edd3">2. STEMM</a>
+<ul>
+<li><a href="#orga04b492">2.1. CSE</a>
+<ul>
+<li><a href="#org65a3a66">2.1.1. AI</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orga957715">3. World</a>
+<ul>
+<li><a href="#org337ca2e">3.1. Nation States</a>
+<ul>
+<li><a href="#org17de3ba">3.1.1. India</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org52795cb">4. Arts</a>
+<ul>
+<li><a href="#orgec95bb3">4.1. Literature</a></li>
+</ul>
+</li>
+<li><a href="#org6c1e5b5">5. Special Topics</a>
+<ul>
+<li><a href="#orga0fbe52">5.1. Classics</a></li>
+</ul>
+</li>
+<li><a href="#org2bef021">6. Misc</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-orgcfb6fc2" class="outline-2">
+<h2 id="orgcfb6fc2"><span class="section-number-2">1.</span> General</h2>
+</div>
+<div id="outline-container-orgee2edd3" class="outline-2">
+<h2 id="orgee2edd3"><span class="section-number-2">2.</span> STEMM</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-orga04b492" class="outline-3">
+<h3 id="orga04b492"><span class="section-number-3">2.1.</span> CSE</h3>
+<div class="outline-text-3" id="text-2-1">
+</div>
+<div id="outline-container-org65a3a66" class="outline-4">
+<h4 id="org65a3a66"><span class="section-number-4">2.1.1.</span> AI</h4>
+<div class="outline-text-4" id="text-2-1-1">
+<ul class="org-ul">
+<li>D. Dietrich, Artificial Intelligence: A Bridge Between Psychoanalysis and Neurology: The Psi-Organ in a Nutshell, 1st ed. 2023 edition. Springer International Publishing AG, 2023.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orga957715" class="outline-2">
+<h2 id="orga957715"><span class="section-number-2">3.</span> World</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org337ca2e" class="outline-3">
+<h3 id="org337ca2e"><span class="section-number-3">3.1.</span> Nation States</h3>
+<div class="outline-text-3" id="text-3-1">
+</div>
+<div id="outline-container-org17de3ba" class="outline-4">
+<h4 id="org17de3ba"><span class="section-number-4">3.1.1.</span> India</h4>
+<div class="outline-text-4" id="text-3-1-1">
+</div>
+<ol class="org-ol">
+<li><a id="org452e061"></a>General<br /></li>
+<li><a id="orgafb597a"></a>World<br />
+<ol class="org-ol">
+<li><a id="org09c6403"></a>People<br />
+<ul class="org-ul">
+<li><a id="org286d3fc"></a>Kakar Sudhir<br />
+<ul class="org-ul">
+<li><a id="org8b0ef0c"></a>General<br />
+<div class="outline-text-8" id="text-org8b0ef0c">
+<ul class="org-ul">
+<li>“Sudhir Kakar,” Wikipedia. Apr. 24, 2024. Accessed: Apr. 25, 2024. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Sudhir_Kakar&amp;oldid=1220481620">https://en.wikipedia.org/w/index.php?title=Sudhir_Kakar&amp;oldid=1220481620</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org2e74389"></a>Works<br />
+<ul class="org-ul">
+<li><a id="orgd70e856"></a>Fiction<br />
+<div class="outline-text-9" id="text-orgd70e856">
+<ul class="org-ul">
+<li>S. Kakar and J. M. Ross, Tales of love, sex, and danger. Oxford University Press, 1986.</li>
+<li>S. Kakar, The Ascetic of desire. Penguin UK, 2000.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgfcc4004"></a>Non Fiction<br />
+<ul class="org-ul">
+<li><a id="orgb9b4fe0"></a>Collections<br />
+<div class="outline-text-10" id="text-orgb9b4fe0">
+<ul class="org-ul">
+<li>S. Kakar, The Essential Sudhir Kakar. Oxford University Press, 2011.</li>
+</ul>
+</div>
+</li>
+<li><a id="org3bb816a"></a>Sex<br />
+<div class="outline-text-10" id="text-org3bb816a">
+<ul class="org-ul">
+<li>S. Kakar, Intimate Relations: Exploring Indian Sexuality. Penguin Books India, 1990.</li>
+<li>M. Vatsyayana, W. Doniger, and S. Kakar, Kamasutra. Oxford University Press, 2009.</li>
+</ul>
+</div>
+</li>
+<li><a id="org4461939"></a>Spirituality<br />
+<div class="outline-text-10" id="text-org4461939">
+<ul class="org-ul">
+<li>S. Kakar, Shamans, Mystics, and Doctors: A Psychological Inquiry Into India and Its Healing Traditions. Oxford, 2012.</li>
+<li>S. Kakar, The Analyst and the Mystic: Psychoanalytic Reflection on Religion and Mysticism. Penguin UK, 2007.</li>
+<li>S. Kakar, Mad and Divine. Penguin Random House India Private Limited, 2018.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgf27bbef"></a>India<br />
+<div class="outline-text-10" id="text-orgf27bbef">
+<ul class="org-ul">
+<li>S. Kakar, Indian Identity. Penguin UK, 2007.
+<ul class="org-ul">
+<li>K. S. &amp; K. Katharina, Hum Hindustani - Hindi. Penguin India, 2008.</li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="orga604a21"></a>Age<br />
+<div class="outline-text-10" id="text-orga604a21">
+<ul class="org-ul">
+<li>S. Kakar, Identity and adulthood. Oxford University Press, 1979.</li>
+<li>S. Kakar, The Inner World: A Psychoanalytic Study of Childhood and Society in India, Fourth Edition. OUP India, 2012.</li>
+</ul>
+</div>
+</li>
+<li><a id="org7ffa8a1"></a>Biographical<br />
+<div class="outline-text-10" id="text-org7ffa8a1">
+<ul class="org-ul">
+<li>S. Kakar, Young Tagore: The Makings Of A Genius. Penguin UK, 2014.</li>
+<li>S. Kakar, Mira and The Mahatma. Penguin Random House India Private Limited, 2018.</li>
+<li>S. Kakar, A Book of Memory: Confessions and Reflections. Penguin UK, 2014.</li>
+</ul>
+</div>
+</li>
+<li><a id="org5d8164e"></a>Misc<br />
+<div class="outline-text-10" id="text-org5d8164e">
+<ul class="org-ul">
+<li>S. Kakar, Culture and Psyche: Psychoanalysis and India. Psyche Press, 1997.</li>
+<li>S. Kakar, Culture and Psyche: Selected Essays. Oxford University Press, 2008.</li>
+
+<li>S. Kakar and G. Blamberger, On Creativity. Penguin UK, 2015.</li>
+
+<li>S. Kakar, On Dreams and Dreaming. Penguin UK, 2011.</li>
+
+<li>S. Kakar, Seriously Strange: Thinking Anew about Psychical Experiences. Penguin UK, 2012.</li>
+
+<li>S. Kakar, The colours of violence. Viking, 1995.</li>
+
+<li>S. Kakar, Death and Dying. Penguin UK, 2014.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="org0087af3"></a>Misc<br />
+<div class="outline-text-8" id="text-org0087af3">
+<ul class="org-ul">
+<li>“Remembering psychoanalyst and author Sudhir Kakar,” The Hindu, Apr. 05, 2025. Accessed: Apr. 06, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/cities/Delhi/remembering-psychoanalyst-and-author-sudhir-kakar/article69417745.ece">https://www.thehindu.com/news/cities/Delhi/remembering-psychoanalyst-and-author-sudhir-kakar/article69417745.ece</a></li>
+
+<li>S. Visvanathan, “Sudhir Kakar (1938-2024): Sexuality, scholarship and secularism,” Frontline. Accessed: May 02, 2024. [Online]. Available: <a href="https://frontline.thehindu.com/other/obituary/sudhir-kakar-sexuality-secularism-obituary/article68127729.ece">https://frontline.thehindu.com/other/obituary/sudhir-kakar-sexuality-secularism-obituary/article68127729.ece</a></li>
+
+<li>“Sudhir Kakar: A Thinker for all Seasons,” The Wire. Accessed: Apr. 25, 2024. [Online]. Available: <a href="https://thewire.in/health/sudhir-kakar-a-thinker-for-all-seasons">https://thewire.in/health/sudhir-kakar-a-thinker-for-all-seasons</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><a id="orgde757ff"></a>Misc<br /></li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-org52795cb" class="outline-2">
+<h2 id="org52795cb"><span class="section-number-2">4.</span> Arts</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-orgec95bb3" class="outline-3">
+<h3 id="orgec95bb3"><span class="section-number-3">4.1.</span> Literature</h3>
+<div class="outline-text-3" id="text-4-1">
+<ul class="org-ul">
+<li>J. Tambling, Ed., The Bloomsbury Handbook to Literature and Psychoanalysis. London ; New York: Bloomsbury Academic, 2023.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org6c1e5b5" class="outline-2">
+<h2 id="org6c1e5b5"><span class="section-number-2">5.</span> Special Topics</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-orga0fbe52" class="outline-3">
+<h3 id="orga0fbe52"><span class="section-number-3">5.1.</span> Classics</h3>
+<div class="outline-text-3" id="text-5-1">
+<ul class="org-ul">
+<li>S. Freud, <i>An Outline of Psycho-Analysis</i>. Martino Publishing, 2011.</li>
+
+<li>C. G. Jung, M. L. von Franz, J. L. Henderson, A. Jaffé, and J. Jacobi, <i>Man and His Symbols.</i> Doubleday, 1964.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org2bef021" class="outline-2">
+<h2 id="org2bef021"><span class="section-number-2">6.</span> Misc</h2>
+<div class="outline-text-2" id="text-6">
+<ul class="org-ul">
+<li>“In psychoanalysis, nostalgia was a sickness. It needn’t be | Psyche Ideas,” Psyche. Accessed: Jun. 07, 2024. [Online]. Available: <a href="https://psyche.co/ideas/in-psychoanalysis-nostalgia-was-a-sickness-it-neednt-be">https://psyche.co/ideas/in-psychoanalysis-nostalgia-was-a-sickness-it-neednt-be</a></li>
+
+<li>“My dismal years in psychoanalysis with Melanie Klein’s disciple | Aeon Essays,” Aeon. Accessed: Apr. 09, 2024. [Online]. Available: <a href="https://aeon.co/essays/my-dismal-years-in-psychoanalysis-with-melanie-kleins-disciple">https://aeon.co/essays/my-dismal-years-in-psychoanalysis-with-melanie-kleins-disciple</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li><i>“Freud versus Jung: a bitter feud over the meaning of sex – Sam Dresser | Aeon Ideas,”</i> Aeon. <a href="https://aeon.co/ideas/freud-versus-jung-a-bitter-feud-over-the-meaning-of-sex">https://aeon.co/ideas/freud-versus-jung-a-bitter-feud-over-the-meaning-of-sex</a> (accessed Dec. 18, 2020).</li>
+
+<li>S. Zizek, Looking Awry: An Introduction to Jacques Lacan through Popular Culture. MIT Press, 1992.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>S. Wortham, “Freud Museum exhibition uses art to explore the psychoanalyst’s often contradictory relationships with women,” The Conversation. Accessed: Nov. 13, 2024. [Online]. Available: <a href="http://theconversation.com/freud-museum-exhibition-uses-art-to-explore-the-psychoanalysts-often-contradictory-relationships-with-women-242644">http://theconversation.com/freud-museum-exhibition-uses-art-to-explore-the-psychoanalysts-often-contradictory-relationships-with-women-242644</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“How I became a psychoanalyst by losing my keys | Psyche Stories of Change.” Accessed: Jun. 13, 2025. [Online]. Available: <a href="https://psyche.co/stories-of-change/how-i-became-a-psychoanalyst-by-losing-my-keys">https://psyche.co/stories-of-change/how-i-became-a-psychoanalyst-by-losing-my-keys</a></li>
+</ul>
+
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-media.html">Media</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://ourghostorg.github.io/">OurGhostOrg</a></p>
+<p class="date">Created: 2026-07-06 Mon 18:35</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
